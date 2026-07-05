@@ -31,6 +31,7 @@
 - https://elevenlabs.io/
 - https://www.fathom.ai/
 - https://www.descript.com/
+- https://www.magnific.com/
 
 ## Education and Communities
 - https://www.skool.com/ai-profit-lab-7462
