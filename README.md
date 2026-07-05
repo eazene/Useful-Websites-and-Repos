@@ -55,3 +55,6 @@
 - https://postiz.com/
 - https://www.blotato.com/
 - https://bolta.ai/
+
+## Cloud Platform
+- https://vercel.com/
