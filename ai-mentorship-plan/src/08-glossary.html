@@ -1,0 +1,96 @@
+<!-- ===================== SECTION 6 ===================== -->
+<div class="section" id="s6">
+  <div class="section-head">
+    <div class="kicker">Section 6 &middot; Deliverable 2</div>
+    <h2>Glossary of AI terms</h2>
+    <hr class="rule">
+  </div>
+  <p class="lead">Plain-English definitions, grouped so Ez can learn them in the order the plan introduces them. Skim it in Phase 1; return to it whenever a term appears.</p>
+
+  <h3>Foundations</h3>
+  <dl class="gloss">
+    <dt>Artificial intelligence (AI)</dt><dd>The broad field of building software that performs tasks we associate with human intelligence &mdash; recognizing patterns, using language, making decisions. An umbrella term, not one technology.</dd>
+    <dt>Machine learning (ML)</dt><dd>A branch of AI where systems <em>learn patterns from data</em> instead of following hand-written rules. Show it thousands of examples and it infers the rule itself.</dd>
+    <dt>Deep learning</dt><dd>ML using neural networks with many layers (&ldquo;deep&rdquo;). It powers essentially all of today&rsquo;s notable AI, including LLMs.</dd>
+    <dt>Neural network</dt><dd>A model loosely inspired by brain neurons: layers of simple units connected by weighted links. During training the weights adjust so the network maps inputs to useful outputs. (The neuroscience analogy is loose &mdash; artificial &ldquo;neurons&rdquo; are far simpler than biological ones.)</dd>
+    <dt>Parameters (weights)</dt><dd>The adjustable numbers inside a neural network &mdash; what it &ldquo;learns.&rdquo; Modern LLMs have billions. More parameters &ne; automatically better.</dd>
+    <dt>Generative AI</dt><dd>AI that <em>produces</em> new content &mdash; text, images, audio, code &mdash; rather than only classifying or predicting a label.</dd>
+    <dt>Large language model (LLM)</dt><dd>A very large neural network trained on huge amounts of text to predict likely next words. That single ability, at scale, yields writing, summarizing, answering, and reasoning. Claude, GPT, and Gemini are LLMs.</dd>
+    <dt>Foundation model</dt><dd>A large model trained on broad data that can be adapted to many downstream tasks &mdash; the &ldquo;base&rdquo; others build on.</dd>
+    <dt>Transformer</dt><dd>The neural-network architecture (introduced 2017) behind modern LLMs. Its key trick is <em>attention</em>. The &ldquo;T&rdquo; in GPT.</dd>
+    <dt>Multimodal</dt><dd>A model that handles more than one kind of input/output &mdash; e.g., text <em>and</em> images. Claude can read an image of a figure and discuss it.</dd>
+  </dl>
+
+  <h3>How models are built &amp; trained</h3>
+  <dl class="gloss">
+    <dt>Training</dt><dd>The process of adjusting a model&rsquo;s parameters by showing it data, so its outputs improve. Expensive and done by the model maker &mdash; not something Ez does.</dd>
+    <dt>Pretraining</dt><dd>The first, largest training stage: the model learns language and world patterns by predicting next tokens across an enormous text corpus. Produces a capable but unpolished &ldquo;base model.&rdquo;</dd>
+    <dt>Fine-tuning</dt><dd>Additional training on a narrower dataset to specialize or align a model&rsquo;s behavior after pretraining.</dd>
+    <dt>RLHF (reinforcement learning from human feedback)</dt><dd>A fine-tuning method where humans rank model outputs and the model is trained to prefer the better ones &mdash; a big reason modern assistants feel helpful and follow instructions.</dd>
+    <dt>Alignment</dt><dd>The effort to make a model&rsquo;s behavior match human intentions and values &mdash; helpful, honest, harmless.</dd>
+    <dt>Training data</dt><dd>The text (and images, etc.) a model learned from. Its coverage and biases shape what the model knows and gets wrong.</dd>
+    <dt>Knowledge cutoff</dt><dd>The date after which a model has no built-in knowledge, because its training data ended there. Anything newer must come from search or documents you provide.</dd>
+    <dt>Benchmark</dt><dd>A standardized test used to compare models (e.g., on reasoning or coding). Useful but imperfect proxies for real-world usefulness.</dd>
+  </dl>
+
+  <h3>Model mechanics &amp; internals</h3>
+  <dl class="gloss">
+    <dt>Token</dt><dd>The unit of text a model reads and writes &mdash; roughly a word-piece (~4 characters of English). Models &ldquo;think&rdquo; in tokens; pricing and limits are measured in them.</dd>
+    <dt>Context window</dt><dd>How much text (in tokens) a model can consider at once &mdash; the prompt plus its reply. Large windows let Claude hold many papers in mind simultaneously.</dd>
+    <dt>Embedding</dt><dd>A representation of text as a list of numbers (a vector) that captures meaning, so similar ideas sit near each other in &ldquo;meaning space.&rdquo; The basis of semantic search.</dd>
+    <dt>Inference</dt><dd>Running a trained model to get an output (as opposed to training it). Each chat message is an inference.</dd>
+    <dt>Temperature</dt><dd>A setting controlling randomness/creativity in output. Lower = more focused and repeatable; higher = more varied.</dd>
+    <dt>Reasoning / &ldquo;thinking&rdquo; models</dt><dd>Models that spend extra computation working through a problem step-by-step before answering, improving hard multi-step tasks.</dd>
+    <dt>Chain of thought</dt><dd>Prompting or training a model to show intermediate reasoning steps, which often improves accuracy on complex problems.</dd>
+  </dl>
+
+  <h3>Using models: prompting &amp; features</h3>
+  <dl class="gloss">
+    <dt>Prompt</dt><dd>What you send the model &mdash; your instructions, question, and any context. Prompt quality largely determines output quality.</dd>
+    <dt>Prompt engineering</dt><dd>The craft of writing effective prompts: giving role, context, constraints, examples, and a desired format.</dd>
+    <dt>System prompt</dt><dd>Background instructions that set a model&rsquo;s persistent behavior for a session (e.g., a Project&rsquo;s custom instructions).</dd>
+    <dt>Zero-shot / few-shot</dt><dd>Asking with no examples (zero-shot) vs. including a few worked examples (few-shot) to steer the output.</dd>
+    <dt>Context / grounding</dt><dd>Supplying source material (papers, data, docs) so the model answers <em>from that</em> rather than from memory &mdash; the key to trustworthy, citable output.</dd>
+    <dt>RAG (retrieval-augmented generation)</dt><dd>A pattern where the system first retrieves relevant documents, then has the model answer using them. Claude Projects and NotebookLM are RAG-style tools.</dd>
+    <dt>Project (Claude)</dt><dd>A persistent workspace with custom instructions and uploaded knowledge that every chat inside inherits &mdash; ideal for a thesis area.</dd>
+    <dt>Artifact (Claude)</dt><dd>A live side-panel workspace for a document, table, or small app the model builds and you can edit.</dd>
+    <dt>Cowork (Claude)</dt><dd>A desktop feature where Claude runs multi-step tasks over your files and folders in the background.</dd>
+    <dt>Canvas / workspace</dt><dd>General term (across tools) for an editable panel where AI-generated content is refined, as opposed to a linear chat.</dd>
+  </dl>
+
+  <h3>Agents, tools &amp; connectors</h3>
+  <dl class="gloss">
+    <dt>AI agent</dt><dd>A system that doesn&rsquo;t just answer but <em>acts</em>: it plans, uses tools, observes results, and loops toward a goal. A chatbot answers; an agent does.</dd>
+    <dt>Tool use / function calling</dt><dd>An LLM&rsquo;s ability to call external tools (search, a calculator, a database) to get real information or take actions beyond generating text.</dd>
+    <dt>Claude Code</dt><dd>Anthropic&rsquo;s agentic tool that works in a terminal or editor: it reads files, runs commands, and edits &mdash; useful for wrangling PDFs, data, and documents, not only for coding.</dd>
+    <dt>MCP (Model Context Protocol)</dt><dd>An open standard &mdash; a &ldquo;USB-C port for AI&rdquo; &mdash; that lets Claude connect to outside data and tools through a common plug instead of custom wiring.</dd>
+    <dt>Connector</dt><dd>A one-click MCP integration linking Claude to a service &mdash; e.g., PubMed, Google Drive, BioRender, Canva.</dd>
+    <dt>API (application programming interface)</dt><dd>A way for software to talk to a model programmatically, billed per token. Meant for building applications; a subscription is the right choice for an individual.</dd>
+    <dt>Terminal / command line</dt><dd>A text interface for giving a computer typed commands. Basic familiarity is enough to run Claude Code; deep expertise isn&rsquo;t needed.</dd>
+    <dt>Guardrails</dt><dd>Constraints that limit what an agent may do &mdash; important because an agent&rsquo;s mistake is a performed <em>action</em>, not just a wrong sentence.</dd>
+  </dl>
+
+  <h3>Research-specific</h3>
+  <dl class="gloss">
+    <dt>Grounded search tool</dt><dd>A research tool (Elicit, Consensus, Scite, Semantic Scholar) that answers from a database of <em>real</em> indexed papers, so citations correspond to actual sources &mdash; far safer than a chatbot&rsquo;s memory.</dd>
+    <dt>Smart citations (Scite)</dt><dd>Citation data showing whether later papers <em>support, mention, or contrast</em> a finding &mdash; useful for checking whether a result held up.</dd>
+    <dt>Citation network</dt><dd>The web of which papers cite which; tools like ResearchRabbit map it visually to reveal a subfield.</dd>
+    <dt>Reference manager</dt><dd>Software (e.g., Zotero) that stores papers and generates formatted citations. Because it holds only papers you actually added, it&rsquo;s a natural gatekeeper against fake references.</dd>
+    <dt>Systematic review</dt><dd>A structured, comprehensive literature review with explicit search and screening criteria; several AI tools now assist the screening/extraction steps.</dd>
+    <dt>NotebookLM</dt><dd>Google&rsquo;s free tool that answers strictly from sources you upload, citing each claim &mdash; strong for close-reading a fixed set of papers.</dd>
+  </dl>
+
+  <h3>Safety, ethics &amp; limitations</h3>
+  <dl class="gloss">
+    <dt>Hallucination</dt><dd>When a model produces confident, fluent output that is false &mdash; invented facts, fake citations, wrong numbers. A structural property of how LLMs work, not an occasional bug: always verify.</dd>
+    <dt>Confabulation</dt><dd>Another word for hallucination, borrowed from the neuroscience/psychology sense of filling gaps with plausible fabrication.</dd>
+    <dt>Bias</dt><dd>Systematic skew in outputs reflecting biases in training data &mdash; relevant to fairness and to scientific interpretation.</dd>
+    <dt>Sycophancy</dt><dd>A model&rsquo;s tendency to agree with the user or tell them what they want to hear &mdash; dangerous when you ask leading analytical or statistical questions.</dd>
+    <dt>Data privacy / retention</dt><dd>Whether and how a service stores or trains on your inputs. Check settings before pasting unpublished or sensitive data; know your account&rsquo;s controls.</dd>
+    <dt>Disclosure</dt><dd>Stating how AI was used in a manuscript or grant, as journals and funders increasingly require.</dd>
+    <dt>Research integrity</dt><dd>Honesty and rigor in research. With AI this means: verify every fact and citation, never fabricate data or imagery, and follow authorship, disclosure, and peer-review rules.</dd>
+    <dt>Reproducibility</dt><dd>Whether others can repeat your work and get the same result. Document AI-assisted analysis steps so they can be re-run and checked.</dd>
+    <dt>Open weights / open source</dt><dd>Models whose parameters are publicly released (e.g., some Llama, Mistral models), which can run locally &mdash; relevant when data can&rsquo;t leave your machine.</dd>
+    <dt>AGI (artificial general intelligence)</dt><dd>A hypothetical AI with broad, human-level competence across most tasks. Today&rsquo;s systems are narrow by comparison; the term is used loosely &mdash; treat bold claims skeptically.</dd>
+  </dl>
+</div>

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Fluency for Scientific Research — A Personalized Learning Plan for Ezechukwu Nduka</title>
+<style>
+  :root{
+    --ink:#1a2332;
+    --ink-soft:#3d4a5c;
+    --muted:#6b7789;
+    --accent:#b8531a;
+    --accent-soft:#f3e7dd;
+    --line:#dfe3ea;
+    --band:#12233b;
+    --good:#1f6f54;
+    --good-soft:#e6f1ec;
+    --warn:#8a5a00;
+    --warn-soft:#faf1dc;
+    --panel:#f6f7f9;
+  }
+  *{box-sizing:border-box}
+  @page{ size:Letter; margin:15mm 16mm 16mm 16mm; }
+  html,body{margin:0;padding:0}
+  body{
+    font-family:Georgia,"Times New Roman",serif;
+    color:var(--ink);
+    font-size:10.7pt;
+    line-height:1.5;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+  h1,h2,h3,h4,.sans{font-family:"Helvetica Neue",Arial,"Segoe UI",sans-serif;}
+  h2{font-size:19pt;color:var(--band);margin:0 0 4px;line-height:1.15;letter-spacing:-.2px}
+  h3{font-size:13pt;color:var(--accent);margin:20px 0 6px;letter-spacing:-.1px}
+  h4{font-size:11pt;color:var(--ink);margin:14px 0 4px}
+  p{margin:7px 0}
+  ul,ol{margin:7px 0 7px 0;padding-left:20px}
+  li{margin:3px 0}
+  a{color:var(--accent);text-decoration:none;word-break:break-word}
+  strong{color:var(--ink)}
+  small{color:var(--muted)}
+  .section{break-before:page;padding-top:2px}
+  .kicker{font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-size:8pt;color:var(--accent);font-weight:700;margin-bottom:6px}
+  .lead{font-size:11.5pt;color:var(--ink-soft)}
+  .rule{height:3px;background:var(--accent);width:54px;border:0;margin:10px 0 16px}
+  .section-head{border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px}
+
+  /* Cover */
+  .cover{break-after:page;height:246mm;background:linear-gradient(160deg,#0e1c30 0%,#16304f 55%,#1d3e63 100%);color:#fff;position:relative;overflow:hidden;border-radius:6px}
+  .cover .glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,#c9622a55,transparent 62%);top:-140px;right:-120px}
+  .cover .glow2{position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,#2a6fc933,transparent 60%);bottom:-120px;left:-100px}
+  .cover .inner{position:relative;padding:34mm 26mm}
+  .cover .eyebrow{font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:4px;font-size:9.5pt;color:#e9b892;font-weight:700}
+  .cover h1{font-family:"Helvetica Neue",Arial,sans-serif;font-size:33pt;line-height:1.08;margin:16px 0 0;font-weight:800;letter-spacing:-.5px}
+  .cover .sub{font-size:14.5pt;color:#cfe0f2;margin-top:14px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:400;max-width:150mm}
+  .cover .who{margin-top:40mm;border-top:1px solid #ffffff33;padding-top:16px;max-width:150mm}
+  .cover .who .row{display:flex;justify-content:space-between;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt;color:#bcd0e6;margin:5px 0}
+  .cover .who .row b{color:#fff;font-weight:600}
+  .cover .foot{position:absolute;bottom:20mm;left:26mm;right:26mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.5pt;color:#9fb4cc;display:flex;justify-content:space-between}
+  .cover .chips{margin-top:22px}
+  .cover .chip{display:inline-block;font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.5pt;letter-spacing:.4px;background:#ffffff18;border:1px solid #ffffff2e;color:#eaf1f8;padding:5px 11px;border-radius:20px;margin:0 6px 8px 0}
+
+  /* Callouts */
+  .box{border:1px solid var(--line);border-radius:8px;padding:12px 15px;margin:12px 0;background:#fff;break-inside:avoid}
+  .box .box-t{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:9.5pt;letter-spacing:.4px;text-transform:uppercase;margin-bottom:5px}
+  .box.accent{background:var(--accent-soft);border-color:#e6cbb6}
+  .box.accent .box-t{color:var(--accent)}
+  .box.good{background:var(--good-soft);border-color:#bfe0d2}
+  .box.good .box-t{color:var(--good)}
+  .box.warn{background:var(--warn-soft);border-color:#eBd6a3}
+  .box.warn .box-t{color:var(--warn)}
+  .box.ink{background:var(--panel);border-color:var(--line)}
+  .box.ink .box-t{color:var(--band)}
+
+  /* Tables */
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:9.4pt;font-family:"Helvetica Neue",Arial,sans-serif}
+  th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--band);color:#fff;font-size:8.4pt;text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+  tr:nth-child(even) td{background:#f7f8fa}
+  table.tight td,table.tight th{padding:5px 8px;font-size:9pt}
+  .pill{display:inline-block;font-size:7.6pt;font-weight:700;padding:2px 7px;border-radius:10px;font-family:"Helvetica Neue",Arial,sans-serif;letter-spacing:.3px}
+  .pill.free{background:var(--good-soft);color:var(--good)}
+  .pill.paid{background:var(--accent-soft);color:var(--accent)}
+  .pill.opt{background:var(--panel);color:var(--muted);border:1px solid var(--line)}
+
+  /* TOC */
+  .toc{font-family:"Helvetica Neue",Arial,sans-serif}
+  .toc a{color:var(--ink);display:flex;justify-content:space-between;border-bottom:1px dotted var(--line);padding:7px 0;font-size:10.4pt}
+  .toc a .n{color:var(--accent);font-weight:700;width:28px;display:inline-block}
+  .toc a .t{flex:1}
+  .toc a .d{color:var(--muted);font-size:8.6pt;max-width:62mm;text-align:right}
+  .toc .grp{font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--accent);font-weight:700;margin:16px 0 4px}
+
+  /* misc */
+  .grid2{display:flex;gap:14px}
+  .grid2 > div{flex:1}
+  .phase-tag{display:inline-block;font-family:"Helvetica Neue",Arial,sans-serif;font-size:8pt;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--accent);padding:3px 9px;border-radius:4px;vertical-align:middle}
+  .wk{font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.6pt;color:var(--muted);font-weight:600;letter-spacing:.5px}
+  .obj{background:var(--panel);border-left:3px solid var(--accent);padding:8px 12px;margin:8px 0;border-radius:0 6px 6px 0;break-inside:avoid}
+  .check{list-style:none;padding-left:0}
+  .check li{padding-left:22px;position:relative;margin:5px 0}
+  .check li:before{content:"\2713";position:absolute;left:0;top:0;color:var(--good);font-weight:800;font-family:sans-serif}
+  .gloss dt{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;color:var(--band);font-size:10pt;margin-top:11px}
+  .gloss dd{margin:2px 0 0;padding:0}
+  .num-circle{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-family:sans-serif;font-weight:700;font-size:9.5pt;margin-right:7px}
+  .mile{border:1px solid var(--line);border-radius:8px;padding:11px 14px;margin:11px 0;break-inside:avoid;background:#fff}
+  .mile .mh{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;color:var(--band);font-size:10.5pt;margin-bottom:3px}
+  .footer-note{font-family:"Helvetica Neue",Arial,sans-serif;font-size:8pt;color:var(--muted);border-top:1px solid var(--line);margin-top:26px;padding-top:8px}
+  .src{font-size:8.4pt;color:var(--muted);font-family:"Helvetica Neue",Arial,sans-serif}
+</style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="glow"></div>
+  <div class="glow2"></div>
+  <div class="inner">
+    <div class="eyebrow">Personalized Learning Plan &middot; Prepared July 2026</div>
+    <h1>AI Fluency for<br>Scientific Research</h1>
+    <div class="sub">A one-hour-a-day path from AI newcomer to locally-expert practitioner &mdash; built for an MD/PhD neuroscientist at the bench.</div>
+    <div class="chips">
+      <span class="chip">Foundations &rarr; LLMs</span>
+      <span class="chip">Claude &amp; Prompting</span>
+      <span class="chip">Literature Synthesis</span>
+      <span class="chip">No-Code Data Analysis</span>
+      <span class="chip">Scientific Writing</span>
+      <span class="chip">Figures &amp; Slides</span>
+      <span class="chip">Claude Code &amp; Agents</span>
+    </div>
+    <div class="who">
+      <div class="row"><span>Prepared for</span><b>Ezechukwu &ldquo;Ez&rdquo; Nduka &mdash; MD/PhD Program, Vanderbilt University</b></div>
+      <div class="row"><span>Stage</span><b>Entering dissertation research &middot; basic-science neuroscience (wet lab)</b></div>
+      <div class="row"><span>Effort budget</span><b>1 focused hour/day &middot; ~6 months</b></div>
+      <div class="row"><span>Spend budget</span><b>&le; $200/month (core path uses a fraction of it)</b></div>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Ecosystem-anchored on Anthropic&rsquo;s Claude, with best-in-class non-Anthropic tools where they win.</span>
+    <span>v1.0</span>
+  </div>
+</div>
+
+<!-- ===================== EXECUTIVE SUMMARY ===================== -->
+<div class="section">
+  <div class="section-head">
+    <div class="kicker">Executive Summary</div>
+    <h2>The plan in one page</h2>
+    <hr class="rule">
+  </div>
+
+  <p class="lead">This plan takes Ez from &ldquo;What is AI?&rdquo; to being the person in his lab others ask for help applying AI to research &mdash; in about six months, at one focused hour per day, for well under the $200/month budget.</p>
+
+  <p>It is deliberately <strong>hands-on</strong>. Every phase pairs a small amount of high-yield reading, video, or audio with a mandatory exercise done on Ez&rsquo;s <strong>own wet-lab material</strong>: his papers, his protocols, his spreadsheets, his figures, his writing. Fluency here means <em>doing the task with AI</em>, not watching someone else do it.</p>
+
+  <div class="grid2">
+    <div class="box ink">
+      <div class="box-t">What Ez will be able to do</div>
+      <ul style="margin:0">
+        <li>Explain, in plain language, what an LLM is and how it is trained &mdash; and where it fails.</li>
+        <li>Run a grounded literature synthesis with <strong>zero fabricated citations</strong>.</li>
+        <li>Analyze a real lab dataset conversationally &mdash; stats and publication-style plots &mdash; without writing code.</li>
+        <li>Draft and edit manuscripts and grant text within journal/NIH policy.</li>
+        <li>Build figures, schematics, and slide decks fast &mdash; ethically.</li>
+        <li>Use Claude Code and connectors (PubMed, Drive) to automate research chores.</li>
+      </ul>
+    </div>
+    <div class="box accent">
+      <div class="box-t">The spend, decided</div>
+      <p style="margin:4px 0"><strong>Anchor: Claude Pro &mdash; $20/mo.</strong> Verified to cover nearly everything: Projects, Artifacts, Cowork, Claude in Chrome, and the science connectors (PubMed, Benchling, BioRender, Google Drive).</p>
+      <p style="margin:4px 0"><strong>Add only when a phase needs it:</strong> BioRender student plan during figure work; Elicit Plus during a systematic review.</p>
+      <p style="margin:4px 0"><strong>Optional power-up:</strong> Claude Max ($100/mo) only if he hits usage limits.</p>
+      <p style="margin:6px 0 0"><small>Typical month: <strong>$20&ndash;$55</strong>. The $200 cap is comfortable, not a target.</small></p>
+    </div>
+  </div>
+
+  <h3>Key findings that shaped this plan</h3>
+  <ul>
+    <li><strong>The &ldquo;Anthropic science offering&rdquo; is real &mdash; but the useful part is included in Pro.</strong> Anthropic launched <em>Claude for Life Sciences</em> (Oct 2025); its PubMed / Benchling / BioRender connectors work on an ordinary $20 Pro plan. The heavier <em>Claude Science</em> workbench skews computational/dry-lab and enterprise, and is <strong>not needed</strong> for a non-coding wet-lab student. Don&rsquo;t budget extra for it.</li>
+    <li><strong>Claude is a superb synthesis and writing engine, but it is not a citation database.</strong> The single most important habit in this plan: never let a chatbot invent references &mdash; discovery happens in grounded tools (Elicit, Semantic Scholar, Scite, NotebookLM), and every citation is verified in Zotero.</li>
+    <li><strong>Image/video generation is non-Anthropic by necessity.</strong> Claude has none. We use BioRender for real scientific figures and free tools (Google Gemini, Gamma, Canva) for slides &mdash; with a hard ethical line: <strong>never generate anything that could pass as experimental data.</strong></li>
+    <li><strong>No coding required to start.</strong> Because Ez has no terminal experience, Claude Code is deferred to Phase 7 and introduced through a gentle, science-first on-ramp &mdash; used to wrangle PDFs and data, not to build software.</li>
+  </ul>
+
+  <div class="box good">
+    <div class="box-t">How &ldquo;expert&rdquo; is made concrete</div>
+    <p style="margin:0">Nine competency domains, each with explicit end-state objectives (Section 2) and a four-level rubric (Novice &rarr; Functional &rarr; Proficient &rarr; Local Expert). Eight milestones (Section 5), one per phase, each a real artifact Ez produces and self-scores &mdash; ending in a capstone &ldquo;research sprint&rdquo; that chains every skill end to end. Progress is visible, not vibes.</p>
+  </div>
+
+  <p class="src">Every resource in this plan was checked against the live web on 8&ndash;9 July 2026. Where a specific price or product detail could not be loaded directly (some vendor pages block automated access), it is corroborated from multiple current sources and flagged in Section 10. Consumer-AI prices and model names change monthly &mdash; confirm at signup.</p>
+</div>

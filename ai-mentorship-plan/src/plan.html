@@ -1,0 +1,1115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Fluency for Scientific Research — A Personalized Learning Plan for Ezechukwu Nduka</title>
+<style>
+  :root{
+    --ink:#1a2332;
+    --ink-soft:#3d4a5c;
+    --muted:#6b7789;
+    --accent:#b8531a;
+    --accent-soft:#f3e7dd;
+    --line:#dfe3ea;
+    --band:#12233b;
+    --good:#1f6f54;
+    --good-soft:#e6f1ec;
+    --warn:#8a5a00;
+    --warn-soft:#faf1dc;
+    --panel:#f6f7f9;
+  }
+  *{box-sizing:border-box}
+  @page{ size:Letter; margin:15mm 16mm 16mm 16mm; }
+  html,body{margin:0;padding:0}
+  body{
+    font-family:Georgia,"Times New Roman",serif;
+    color:var(--ink);
+    font-size:10.7pt;
+    line-height:1.5;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+  h1,h2,h3,h4,.sans{font-family:"Helvetica Neue",Arial,"Segoe UI",sans-serif;}
+  h2{font-size:19pt;color:var(--band);margin:0 0 4px;line-height:1.15;letter-spacing:-.2px}
+  h3{font-size:13pt;color:var(--accent);margin:20px 0 6px;letter-spacing:-.1px}
+  h4{font-size:11pt;color:var(--ink);margin:14px 0 4px}
+  p{margin:7px 0}
+  ul,ol{margin:7px 0 7px 0;padding-left:20px}
+  li{margin:3px 0}
+  a{color:var(--accent);text-decoration:none;word-break:break-word}
+  strong{color:var(--ink)}
+  small{color:var(--muted)}
+  .section{break-before:page;padding-top:2px}
+  .kicker{font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-size:8pt;color:var(--accent);font-weight:700;margin-bottom:6px}
+  .lead{font-size:11.5pt;color:var(--ink-soft)}
+  .rule{height:3px;background:var(--accent);width:54px;border:0;margin:10px 0 16px}
+  .section-head{border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px}
+
+  /* Cover */
+  .cover{break-after:page;height:246mm;background:linear-gradient(160deg,#0e1c30 0%,#16304f 55%,#1d3e63 100%);color:#fff;position:relative;overflow:hidden;border-radius:6px}
+  .cover .glow{position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,#c9622a55,transparent 62%);top:-140px;right:-120px}
+  .cover .glow2{position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,#2a6fc933,transparent 60%);bottom:-120px;left:-100px}
+  .cover .inner{position:relative;padding:34mm 26mm}
+  .cover .eyebrow{font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:4px;font-size:9.5pt;color:#e9b892;font-weight:700}
+  .cover h1{font-family:"Helvetica Neue",Arial,sans-serif;font-size:33pt;line-height:1.08;margin:16px 0 0;font-weight:800;letter-spacing:-.5px}
+  .cover .sub{font-size:14.5pt;color:#cfe0f2;margin-top:14px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:400;max-width:150mm}
+  .cover .who{margin-top:40mm;border-top:1px solid #ffffff33;padding-top:16px;max-width:150mm}
+  .cover .who .row{display:flex;justify-content:space-between;font-family:"Helvetica Neue",Arial,sans-serif;font-size:10pt;color:#bcd0e6;margin:5px 0}
+  .cover .who .row b{color:#fff;font-weight:600}
+  .cover .foot{position:absolute;bottom:20mm;left:26mm;right:26mm;font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.5pt;color:#9fb4cc;display:flex;justify-content:space-between}
+  .cover .chips{margin-top:22px}
+  .cover .chip{display:inline-block;font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.5pt;letter-spacing:.4px;background:#ffffff18;border:1px solid #ffffff2e;color:#eaf1f8;padding:5px 11px;border-radius:20px;margin:0 6px 8px 0}
+
+  /* Callouts */
+  .box{border:1px solid var(--line);border-radius:8px;padding:12px 15px;margin:12px 0;background:#fff;break-inside:avoid}
+  .box .box-t{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;font-size:9.5pt;letter-spacing:.4px;text-transform:uppercase;margin-bottom:5px}
+  .box.accent{background:var(--accent-soft);border-color:#e6cbb6}
+  .box.accent .box-t{color:var(--accent)}
+  .box.good{background:var(--good-soft);border-color:#bfe0d2}
+  .box.good .box-t{color:var(--good)}
+  .box.warn{background:var(--warn-soft);border-color:#eBd6a3}
+  .box.warn .box-t{color:var(--warn)}
+  .box.ink{background:var(--panel);border-color:var(--line)}
+  .box.ink .box-t{color:var(--band)}
+
+  /* Tables */
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:9.4pt;font-family:"Helvetica Neue",Arial,sans-serif}
+  th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--band);color:#fff;font-size:8.4pt;text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+  tr:nth-child(even) td{background:#f7f8fa}
+  table.tight td,table.tight th{padding:5px 8px;font-size:9pt}
+  .pill{display:inline-block;font-size:7.6pt;font-weight:700;padding:2px 7px;border-radius:10px;font-family:"Helvetica Neue",Arial,sans-serif;letter-spacing:.3px}
+  .pill.free{background:var(--good-soft);color:var(--good)}
+  .pill.paid{background:var(--accent-soft);color:var(--accent)}
+  .pill.opt{background:var(--panel);color:var(--muted);border:1px solid var(--line)}
+
+  /* TOC */
+  .toc{font-family:"Helvetica Neue",Arial,sans-serif}
+  .toc a{color:var(--ink);display:flex;justify-content:space-between;border-bottom:1px dotted var(--line);padding:7px 0;font-size:10.4pt}
+  .toc a .n{color:var(--accent);font-weight:700;width:28px;display:inline-block}
+  .toc a .t{flex:1}
+  .toc a .d{color:var(--muted);font-size:8.6pt;max-width:62mm;text-align:right}
+  .toc .grp{font-size:8pt;letter-spacing:2px;text-transform:uppercase;color:var(--accent);font-weight:700;margin:16px 0 4px}
+
+  /* misc */
+  .grid2{display:flex;gap:14px}
+  .grid2 > div{flex:1}
+  .phase-tag{display:inline-block;font-family:"Helvetica Neue",Arial,sans-serif;font-size:8pt;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--accent);padding:3px 9px;border-radius:4px;vertical-align:middle}
+  .wk{font-family:"Helvetica Neue",Arial,sans-serif;font-size:8.6pt;color:var(--muted);font-weight:600;letter-spacing:.5px}
+  .obj{background:var(--panel);border-left:3px solid var(--accent);padding:8px 12px;margin:8px 0;border-radius:0 6px 6px 0;break-inside:avoid}
+  .check{list-style:none;padding-left:0}
+  .check li{padding-left:22px;position:relative;margin:5px 0}
+  .check li:before{content:"\2713";position:absolute;left:0;top:0;color:var(--good);font-weight:800;font-family:sans-serif}
+  .gloss dt{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;color:var(--band);font-size:10pt;margin-top:11px}
+  .gloss dd{margin:2px 0 0;padding:0}
+  .num-circle{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-family:sans-serif;font-weight:700;font-size:9.5pt;margin-right:7px}
+  .mile{border:1px solid var(--line);border-radius:8px;padding:11px 14px;margin:11px 0;break-inside:avoid;background:#fff}
+  .mile .mh{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:700;color:var(--band);font-size:10.5pt;margin-bottom:3px}
+  .footer-note{font-family:"Helvetica Neue",Arial,sans-serif;font-size:8pt;color:var(--muted);border-top:1px solid var(--line);margin-top:26px;padding-top:8px}
+  .src{font-size:8.4pt;color:var(--muted);font-family:"Helvetica Neue",Arial,sans-serif}
+</style>
+</head>
+<body>
+
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="glow"></div>
+  <div class="glow2"></div>
+  <div class="inner">
+    <div class="eyebrow">Personalized Learning Plan &middot; Prepared July 2026</div>
+    <h1>AI Fluency for<br>Scientific Research</h1>
+    <div class="sub">A one-hour-a-day path from AI newcomer to locally-expert practitioner &mdash; built for an MD/PhD neuroscientist at the bench.</div>
+    <div class="chips">
+      <span class="chip">Foundations &rarr; LLMs</span>
+      <span class="chip">Claude &amp; Prompting</span>
+      <span class="chip">Literature Synthesis</span>
+      <span class="chip">No-Code Data Analysis</span>
+      <span class="chip">Scientific Writing</span>
+      <span class="chip">Figures &amp; Slides</span>
+      <span class="chip">Claude Code &amp; Agents</span>
+    </div>
+    <div class="who">
+      <div class="row"><span>Prepared for</span><b>Ezechukwu &ldquo;Ez&rdquo; Nduka &mdash; MD/PhD Program, Vanderbilt University</b></div>
+      <div class="row"><span>Stage</span><b>Entering dissertation research &middot; basic-science neuroscience (wet lab)</b></div>
+      <div class="row"><span>Effort budget</span><b>1 focused hour/day &middot; ~6 months</b></div>
+      <div class="row"><span>Spend budget</span><b>&le; $200/month (core path uses a fraction of it)</b></div>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Ecosystem-anchored on Anthropic&rsquo;s Claude, with best-in-class non-Anthropic tools where they win.</span>
+    <span>v1.0</span>
+  </div>
+</div>
+
+<!-- ===================== EXECUTIVE SUMMARY ===================== -->
+<div class="section">
+  <div class="section-head">
+    <div class="kicker">Executive Summary</div>
+    <h2>The plan in one page</h2>
+    <hr class="rule">
+  </div>
+
+  <p class="lead">This plan takes Ez from &ldquo;What is AI?&rdquo; to being the person in his lab others ask for help applying AI to research &mdash; in about six months, at one focused hour per day, for well under the $200/month budget.</p>
+
+  <p>It is deliberately <strong>hands-on</strong>. Every phase pairs a small amount of high-yield reading, video, or audio with a mandatory exercise done on Ez&rsquo;s <strong>own wet-lab material</strong>: his papers, his protocols, his spreadsheets, his figures, his writing. Fluency here means <em>doing the task with AI</em>, not watching someone else do it.</p>
+
+  <div class="grid2">
+    <div class="box ink">
+      <div class="box-t">What Ez will be able to do</div>
+      <ul style="margin:0">
+        <li>Explain, in plain language, what an LLM is and how it is trained &mdash; and where it fails.</li>
+        <li>Run a grounded literature synthesis with <strong>zero fabricated citations</strong>.</li>
+        <li>Analyze a real lab dataset conversationally &mdash; stats and publication-style plots &mdash; without writing code.</li>
+        <li>Draft and edit manuscripts and grant text within journal/NIH policy.</li>
+        <li>Build figures, schematics, and slide decks fast &mdash; ethically.</li>
+        <li>Use Claude Code and connectors (PubMed, Drive) to automate research chores.</li>
+      </ul>
+    </div>
+    <div class="box accent">
+      <div class="box-t">The spend, decided</div>
+      <p style="margin:4px 0"><strong>Anchor: Claude Pro &mdash; $20/mo.</strong> Verified to cover nearly everything: Projects, Artifacts, Cowork, Claude in Chrome, and the science connectors (PubMed, Benchling, BioRender, Google Drive).</p>
+      <p style="margin:4px 0"><strong>Add only when a phase needs it:</strong> BioRender student plan during figure work; Elicit Plus during a systematic review.</p>
+      <p style="margin:4px 0"><strong>Optional power-up:</strong> Claude Max ($100/mo) only if he hits usage limits.</p>
+      <p style="margin:6px 0 0"><small>Typical month: <strong>$20&ndash;$55</strong>. The $200 cap is comfortable, not a target.</small></p>
+    </div>
+  </div>
+
+  <h3>Key findings that shaped this plan</h3>
+  <ul>
+    <li><strong>The &ldquo;Anthropic science offering&rdquo; is real &mdash; but the useful part is included in Pro.</strong> Anthropic launched <em>Claude for Life Sciences</em> (Oct 2025); its PubMed / Benchling / BioRender connectors work on an ordinary $20 Pro plan. The heavier <em>Claude Science</em> workbench skews computational/dry-lab and enterprise, and is <strong>not needed</strong> for a non-coding wet-lab student. Don&rsquo;t budget extra for it.</li>
+    <li><strong>Claude is a superb synthesis and writing engine, but it is not a citation database.</strong> The single most important habit in this plan: never let a chatbot invent references &mdash; discovery happens in grounded tools (Elicit, Semantic Scholar, Scite, NotebookLM), and every citation is verified in Zotero.</li>
+    <li><strong>Image/video generation is non-Anthropic by necessity.</strong> Claude has none. We use BioRender for real scientific figures and free tools (Google Gemini, Gamma, Canva) for slides &mdash; with a hard ethical line: <strong>never generate anything that could pass as experimental data.</strong></li>
+    <li><strong>No coding required to start.</strong> Because Ez has no terminal experience, Claude Code is deferred to Phase 7 and introduced through a gentle, science-first on-ramp &mdash; used to wrangle PDFs and data, not to build software.</li>
+  </ul>
+
+  <div class="box good">
+    <div class="box-t">How &ldquo;expert&rdquo; is made concrete</div>
+    <p style="margin:0">Nine competency domains, each with explicit end-state objectives (Section 2) and a four-level rubric (Novice &rarr; Functional &rarr; Proficient &rarr; Local Expert). Eight milestones (Section 5), one per phase, each a real artifact Ez produces and self-scores &mdash; ending in a capstone &ldquo;research sprint&rdquo; that chains every skill end to end. Progress is visible, not vibes.</p>
+  </div>
+
+  <p class="src">Every resource in this plan was checked against the live web on 8&ndash;9 July 2026. Where a specific price or product detail could not be loaded directly (some vendor pages block automated access), it is corroborated from multiple current sources and flagged in Section 10. Consumer-AI prices and model names change monthly &mdash; confirm at signup.</p>
+</div>
+<!-- ===================== TABLE OF CONTENTS ===================== -->
+<div class="section">
+  <div class="section-head">
+    <div class="kicker">Contents</div>
+    <h2>Table of contents</h2>
+    <hr class="rule">
+  </div>
+  <div class="toc">
+    <div class="grp">Orientation</div>
+    <a href="#s1"><span><span class="n">1</span><span class="t">How to use this plan</span></span><span class="d">The 1-hour rhythm, ground rules, self-assessment</span></a>
+    <a href="#s2"><span><span class="n">2</span><span class="t">The destination: what &ldquo;locally expert&rdquo; means</span></span><span class="d">9 competency domains, objectives &amp; rubric</span></a>
+    <a href="#s3"><span><span class="n">3</span><span class="t">Tools &amp; budget</span></span><span class="d">The Anthropic stack, the science offering, spend</span></a>
+
+    <div class="grp">The plan</div>
+    <a href="#s4"><span><span class="n">4</span><span class="t">The phased timeline</span></span><span class="d">Phases 0&ndash;8, weekly, with lab-tailored exercises</span></a>
+    <a href="#s4p0"><span><span class="n" style="opacity:0">.</span><span class="t" style="padding-left:10px">Phase 0 &middot; Setup &amp; first contact</span></span><span class="d">Week 1</span></a>
+    <a href="#s4p1"><span><span class="n" style="opacity:0">.</span><span class="t" style="padding-left:10px">Phase 1 &middot; Foundations: what AI &amp; LLMs are</span></span><span class="d">Weeks 1&ndash;3</span></a>
+    <a href="#s4p2"><span><span class="n" style="opacity:0">.</span><span class="t" style="padding-left:10px">Phase 2 &middot; Claude fluency &amp; prompting</span></span><span class="d">Weeks 4&ndash;5</span></a>
+    <a href="#s4p3"><span><span class="n" style="opacity:0">.</span><span class="t" style="padding-left:10px">Phase 3 &middot; Literature review &amp; synthesis</span></span><span class="d">Weeks 6&ndash;9</span></a>
+    <a href="#s4p4"><span><span class="n" style="opacity:0">.</span><span class="t" style="padding-left:10px">Phase 4 &middot; Data analysis without coding</span></span><span class="d">Weeks 10&ndash;12</span></a>
+    <a href="#s4p5"><span><span class="n" style="opacity:0">.</span><span class="t" style="padding-left:10px">Phase 5 &middot; Scientific writing &amp; research integrity</span></span><span class="d">Weeks 13&ndash;15</span></a>
+    <a href="#s4p6"><span><span class="n" style="opacity:0">.</span><span class="t" style="padding-left:10px">Phase 6 &middot; Figures, slides &amp; media</span></span><span class="d">Weeks 16&ndash;17</span></a>
+    <a href="#s4p7"><span><span class="n" style="opacity:0">.</span><span class="t" style="padding-left:10px">Phase 7 &middot; Claude Code, agents &amp; connectors</span></span><span class="d">Weeks 18&ndash;22</span></a>
+    <a href="#s4p8"><span><span class="n" style="opacity:0">.</span><span class="t" style="padding-left:10px">Phase 8 &middot; Integration, capstone &amp; habit</span></span><span class="d">Weeks 23&ndash;26</span></a>
+    <a href="#s5"><span><span class="n">5</span><span class="t">Milestones &amp; checkpoints</span></span><span class="d">8 self-scored deliverables + capstone</span></a>
+
+    <div class="grp">Reference</div>
+    <a href="#s6"><span><span class="n">6</span><span class="t">Glossary of AI terms</span></span><span class="d">~60 plain-English definitions</span></a>
+    <a href="#s7"><span><span class="n">7</span><span class="t">Resources used in this plan</span></span><span class="d">Curated, verified, by topic</span></a>
+    <a href="#s8"><span><span class="n">8</span><span class="t">If he has extra time</span></span><span class="d">A short optional-depth list</span></a>
+    <a href="#s9"><span><span class="n">9</span><span class="t">Continuing education</span></span><span class="d">The ruthless keep-current shortlist</span></a>
+    <a href="#s10"><span><span class="n">10</span><span class="t">Verification notes &amp; caveats</span></span><span class="d">What was confirmed, what to re-check</span></a>
+    <a href="#s11"><span><span class="n">A</span><span class="t">Appendix: first-week checklist &amp; starter prompts</span></span><span class="d">Copy-paste, wet-lab flavored</span></a>
+  </div>
+
+  <div class="box ink" style="margin-top:20px">
+    <div class="box-t">A note to the mentor</div>
+    <p style="margin:0">This document is built to be handed to Ez directly and worked through in order &mdash; but it also stands alone as a reference he&rsquo;ll return to. The phases are sequential by design (each assumes the last), yet Sections 6&ndash;9 are meant to be dipped into anytime. If Ez ramps faster than expected, the natural place to compress is Phase 1; the high-value core is Phases 3&ndash;7. Suggested cadence for you both: a 15-minute check-in at each milestone (Section 5) using its self-score rubric.</p>
+  </div>
+</div>
+<!-- ===================== SECTION 1 ===================== -->
+<div class="section" id="s1">
+  <div class="section-head">
+    <div class="kicker">Section 1</div>
+    <h2>How to use this plan</h2>
+    <hr class="rule">
+  </div>
+
+  <p class="lead">One focused hour a day is a real constraint, not a soft one. This plan is engineered around it: short inputs, immediate practice, and nothing included that isn&rsquo;t high-yield.</p>
+
+  <h3>The daily hour</h3>
+  <p>Treat each session as roughly <strong>20 minutes of input</strong> (a video segment, a doc, a short article) and <strong>40 minutes of doing</strong>. The doing is the point. Consuming content about AI produces the <em>illusion</em> of fluency; using AI on your own material produces the real thing. Where a resource is long (a 3-hour Karpathy talk), it is explicitly chunked across sessions.</p>
+
+  <div class="grid2">
+    <div class="box good">
+      <div class="box-t">Rules that make the hour pay off</div>
+      <ul style="margin:0">
+        <li><strong>Always use real lab material.</strong> Your papers, your data, your draft &mdash; never a toy example when a real one exists.</li>
+        <li><strong>Keep an AI Lab Notebook.</strong> One running doc: what you tried, the prompt, what worked, what the model got wrong. This becomes your personal playbook.</li>
+        <li><strong>Verify before you trust.</strong> Every fact, number, and citation that leaves a chat and enters your science gets checked against the source.</li>
+        <li><strong>Miss a day, don&rsquo;t miss two.</strong> The schedule has slack built in; consistency beats intensity.</li>
+      </ul>
+    </div>
+    <div class="box warn">
+      <div class="box-t">Data hygiene from day one</div>
+      <p style="margin:0 0 5px">Your PI confirmed that unpublished basic-science data is generally fine in mainstream cloud AI tools &mdash; but build good habits anyway:</p>
+      <ul style="margin:0">
+        <li>Never paste <strong>human-subjects / identifiable</strong> data into any consumer tool without checking IRB and data-use terms first.</li>
+        <li>Strip names, MRNs, and animal-protocol identifiers you don&rsquo;t need.</li>
+        <li>Treat anything <strong>pre-publication and competitively sensitive</strong> with care; when unsure, ask your PI.</li>
+        <li>Know your setting: consumer Claude does not train on your chats when memory/training controls are off &mdash; confirm your account settings.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>The shape of the six months</h3>
+  <p>Nine phases (0&ndash;8) over ~26 weeks. Each phase has: learning objectives, a curated resource shortlist, a mandatory hands-on exercise tied to Ez&rsquo;s lab, and a milestone he self-scores before moving on. The phases build on each other; the rubric in Section 2 lets Ez (and his mentor) see the climb from novice to local expert in each competency.</p>
+
+  <table class="tight">
+    <tr><th>Phase</th><th>Focus</th><th>Weeks</th><th>~Hours</th><th>Milestone artifact</th></tr>
+    <tr><td><strong>0</strong></td><td>Setup &amp; first contact</td><td>1 (part)</td><td>2&ndash;3</td><td>Accounts live; first useful chat</td></tr>
+    <tr><td><strong>1</strong></td><td>Foundations: what AI &amp; LLMs are</td><td>1&ndash;3</td><td>12&ndash;14</td><td>5-minute &ldquo;explain an LLM&rdquo; talk</td></tr>
+    <tr><td><strong>2</strong></td><td>Claude fluency &amp; prompting</td><td>4&ndash;5</td><td>9&ndash;10</td><td>Thesis Project + prompt library</td></tr>
+    <tr><td><strong>3</strong></td><td>Literature review &amp; synthesis</td><td>6&ndash;9</td><td>18&ndash;20</td><td>Verified mini-synthesis, 0 fake cites</td></tr>
+    <tr><td><strong>4</strong></td><td>Data analysis without coding</td><td>10&ndash;12</td><td>14&ndash;15</td><td>Real dataset &rarr; stats + figure</td></tr>
+    <tr><td><strong>5</strong></td><td>Scientific writing &amp; integrity</td><td>13&ndash;15</td><td>14&ndash;15</td><td>Edited section + disclosure note</td></tr>
+    <tr><td><strong>6</strong></td><td>Figures, slides &amp; media</td><td>16&ndash;17</td><td>9&ndash;10</td><td>BioRender figure + AI deck</td></tr>
+    <tr><td><strong>7</strong></td><td>Claude Code, agents &amp; connectors</td><td>18&ndash;22</td><td>22&ndash;25</td><td>PDF folder &rarr; evidence table</td></tr>
+    <tr><td><strong>8</strong></td><td>Integration, capstone &amp; habit</td><td>23&ndash;26</td><td>16&ndash;18</td><td>End-to-end research sprint</td></tr>
+  </table>
+
+  <h3>Why six months?</h3>
+  <p>At ~5 sessions/week, six months is roughly <strong>120&ndash;130 focused hours</strong> &mdash; with real practice on real work. That is the horizon justified by the objectives in Section 2:</p>
+  <ul>
+    <li><strong>Shorter (a &ldquo;30-day crash course&rdquo;) can&rsquo;t reach expertise.</strong> Breadth this wide &mdash; foundations, synthesis, analysis, writing, figures, agents &mdash; needs spaced practice to stick, and each skill has to be exercised on genuine lab tasks, which take time to arise.</li>
+    <li><strong>Longer than ~8 months works against him.</strong> Tools and model versions drift on a monthly cadence; momentum and retention fade. Six months is long enough for depth and durable habits, short enough that what he learns is still current when he finishes.</li>
+    <li><strong>It fits the science calendar.</strong> Phases map onto things a second-to-third-year PhD is actually doing &mdash; reading in, generating pilot data, writing a first-year committee document or F30/F31 aims &mdash; so the practice is never contrived.</li>
+  </ul>
+
+  <div class="box accent">
+    <div class="box-t">If life compresses the timeline</div>
+    <p style="margin:0">The plan is modular. A realistic minimum to still call himself fluent: Phases 0&ndash;5 (~10&ndash;12 weeks) cover foundations, Claude, literature, data, and writing &mdash; the daily-driver skills. Phases 6&ndash;8 add figures, agentic automation, and integration, which push him from &ldquo;fluent&rdquo; to &ldquo;the person others ask.&rdquo; Don&rsquo;t skip milestones &mdash; they are the proof.</p>
+  </div>
+</div>
+<!-- ===================== SECTION 2 ===================== -->
+<div class="section" id="s2">
+  <div class="section-head">
+    <div class="kicker">Section 2</div>
+    <h2>The destination: what &ldquo;locally expert&rdquo; means</h2>
+    <hr class="rule">
+  </div>
+
+  <p class="lead">&ldquo;Expert&rdquo; is easy to say and hard to measure. Here it is defined as nine concrete competency domains, each with end-state objectives Ez should be able to demonstrate &mdash; and a rubric that turns the vague endpoint into a visible climb.</p>
+
+  <p>The working definition: <strong>Ez is locally expert when he can not only do each task below reliably on his own work, but also show a labmate how &mdash; and knows the limits and failure modes well enough to keep the lab out of trouble.</strong> Teaching-readiness and risk-awareness are what separate &ldquo;good user&rdquo; from &ldquo;local expert.&rdquo;</p>
+
+  <h3>The nine competency domains &amp; their objectives</h3>
+
+  <div class="obj"><strong>D1 &middot; Foundational literacy.</strong> Explain in plain language &mdash; to a scientist or a family member &mdash; what AI, machine learning, deep learning, and neural networks are; what an LLM is and how it is built (pretraining, fine-tuning, RLHF); and what tokens, context windows, embeddings, parameters, and multimodality mean. Explain <em>why</em> LLMs hallucinate and why they&rsquo;re confident when wrong.</div>
+
+  <div class="obj"><strong>D2 &middot; Conversational skill (prompting).</strong> Get reliably better output than a novice from the same model: give role/context/constraints, provide examples, ask for structured output, iterate and critique, and know when to switch models or start fresh. Build and reuse a personal prompt library.</div>
+
+  <div class="obj"><strong>D3 &middot; The Claude platform.</strong> Use Projects, Artifacts, Cowork, file uploads, Claude in Chrome, and connectors fluently; choose the right surface for a task; set up a persistent Project that carries his thesis context across every chat.</div>
+
+  <div class="obj"><strong>D4 &middot; Literature discovery &amp; synthesis.</strong> Run an end-to-end literature workflow &mdash; discover with grounded tools, map a subfield, synthesize with Claude/NotebookLM, and manage references in Zotero &mdash; producing a synthesis with <strong>no fabricated or misattributed citations</strong>, every claim traceable to a real, read paper.</div>
+
+  <div class="obj"><strong>D5 &middot; Data analysis without coding.</strong> Take a real lab dataset (CSV/Excel), analyze it conversationally &mdash; cleaning, descriptive stats, appropriate basic tests, and publication-style plots &mdash; interpret results critically, catch when the AI does something statistically wrong, and keep the work reproducible.</div>
+
+  <div class="obj"><strong>D6 &middot; Scientific writing &amp; communication.</strong> Use AI to outline, draft, tighten, and pressure-test scientific prose (manuscripts, aims, rebuttals, plain-language summaries) while staying squarely within ICMJE and NIH policy &mdash; correct disclosure, no undisclosed authorship, no fabrication, no AI in confidential peer review.</div>
+
+  <div class="obj"><strong>D7 &middot; Visual &amp; media generation.</strong> Produce clear scientific figures and schematics (BioRender), concept graphics for slides/posters (Gemini, Canva), and AI-generated decks (Gamma) &mdash; efficiently and within a firm ethical line that never fabricates data-like imagery.</div>
+
+  <div class="obj"><strong>D8 &middot; Agents &amp; automation (Claude Code + connectors).</strong> Comfortably use the terminal at a basic level; run Claude Code to process folders of PDFs/data and automate research chores; understand agents conceptually; connect Claude to PubMed and Google Drive via MCP connectors; know when an agent should <em>not</em> be trusted to act unsupervised.</div>
+
+  <div class="obj"><strong>D9 &middot; Responsible use &amp; judgment.</strong> Reason clearly about hallucination, bias, privacy, reproducibility, and research integrity; verify AI output as a reflex; explain to others what is and isn&rsquo;t appropriate; make good build-vs-trust decisions. This is the connective tissue across all eight other domains.</div>
+
+  <h3>The self-assessment rubric</h3>
+  <p>For each domain, Ez rates himself against four levels. He starts mostly at <strong>Novice</strong>; the plan is designed to carry every domain to <strong>Proficient</strong>, with several reaching <strong>Local Expert</strong> by the capstone. Re-score at each milestone.</p>
+
+  <table>
+    <tr><th style="width:14%">Level</th><th>What it looks like (any domain)</th></tr>
+    <tr><td><strong>Novice</strong></td><td>Has heard the terms; uses AI like a search box; accepts output at face value; unaware of failure modes.</td></tr>
+    <tr><td><strong>Functional</strong></td><td>Completes the task with guidance or a template; gets useful results on simple cases; starting to spot obvious errors.</td></tr>
+    <tr><td><strong>Proficient</strong></td><td>Does the task independently on real work; structures prompts and workflows deliberately; verifies output; recovers when the model is wrong.</td></tr>
+    <tr><td><strong>Local Expert</strong></td><td>Fast and reliable on messy real cases; <em>teaches the workflow to others</em>; anticipates failure modes and designs around them; makes sound judgment calls about when not to use AI.</td></tr>
+  </table>
+
+  <div class="box ink">
+    <div class="box-t">Target end-state profile</div>
+    <p style="margin:0">By the capstone, a realistic and excellent outcome is <strong>Local Expert</strong> in D1&ndash;D4, D6, and D9 (the daily research core), and <strong>Proficient</strong> in D5, D7, and D8 &mdash; with clear paths to push those to expert as his own research demands. That profile fully satisfies the goal: the go-to person in his lab for applying AI to science and daily life.</p>
+  </div>
+</div>
+<!-- ===================== SECTION 3 ===================== -->
+<div class="section" id="s3">
+  <div class="section-head">
+    <div class="kicker">Section 3</div>
+    <h2>Tools &amp; budget</h2>
+    <hr class="rule">
+  </div>
+
+  <p class="lead">The headline: a single <strong>$20/month Claude Pro</strong> subscription is the engine for ~80% of this plan. Everything else is either free or added only for the weeks a phase needs it. The $200 budget is comfortable headroom, not a spending target.</p>
+
+  <h3>3.1 &nbsp;The Anthropic core</h3>
+  <p>Research confirmed that the surfaces Ez needs are bundled into consumer Claude plans &mdash; he does not need the API (pay-per-token, meant for building software) or any enterprise product.</p>
+
+  <table>
+    <tr><th>Surface</th><th>What it is</th><th>Plan</th><th>Why it matters for Ez</th></tr>
+    <tr><td><strong>Claude Pro</strong></td><td>The core subscription: full model access, higher limits</td><td><span class="pill paid">$20/mo</span> (≈$17/mo annual)</td><td>The anchor. Unlocks everything below.</td></tr>
+    <tr><td><strong>Projects</strong></td><td>Persistent workspace with custom instructions + uploaded knowledge every chat inherits</td><td>Included</td><td>One Project per paper / experiment / grant keeps context loaded.</td></tr>
+    <tr><td><strong>Artifacts</strong></td><td>Live side-panel for documents, tables, small apps</td><td>Included</td><td>Draft docs, comparison tables, quick calculators.</td></tr>
+    <tr><td><strong>Cowork</strong></td><td>Desktop &ldquo;AI coworker&rdquo; that runs multi-step tasks over your files/folders</td><td>Included (Pro, since Jan 2026)</td><td>&ldquo;Organize these data files / synthesize these PDFs&rdquo; over a real folder.</td></tr>
+    <tr><td><strong>Connectors (MCP)</strong></td><td>One-click links to outside tools &amp; data</td><td>Included, all plans</td><td><strong>PubMed, Google Drive, BioRender, Benchling</strong> &mdash; the science combo.</td></tr>
+    <tr><td><strong>Claude in Chrome</strong></td><td>Browser extension that can act on web pages</td><td>Included, paid plans (beta)</td><td>Navigate journal portals/databases; use cautiously.</td></tr>
+    <tr><td><strong>Claude Code</strong></td><td>Agentic tool that reads files, runs commands, edits, automates</td><td>Included (Pro/Max)</td><td>Phase 7: PDF/data wrangling &mdash; not software-building.</td></tr>
+    <tr><td><strong>Claude for Excel</strong></td><td>Spreadsheet integration for conversational analysis</td><td>Paid plans</td><td>Phase 4: analyze CSV/Excel without code.</td></tr>
+  </table>
+
+  <div class="box accent">
+    <div class="box-t">The &ldquo;science offering,&rdquo; assessed honestly</div>
+    <p style="margin:0 0 6px">Anthropic really does have a science push &mdash; but the practically useful part for Ez is already inside Pro:</p>
+    <ul style="margin:0">
+      <li><strong>Claude for Life Sciences</strong> (launched Oct 2025): connectors into <strong>PubMed, Benchling, BioRender, and 10x Genomics</strong>, plus science &ldquo;Agent Skills.&rdquo; These work on a normal Pro plan &mdash; <em>this is the real, budget-friendly win</em>, and it maps directly onto a wet-lab neuro workflow (literature, protocols, figures).</li>
+      <li><strong>Claude Science</strong> (the newer &ldquo;AI workbench&rdquo;): a desktop app oriented toward computational pipelines, packages, and compute, in macOS/Linux beta and leaning enterprise/dry-lab. <strong>Verdict: overkill and not needed</strong> for a non-coding wet-lab student. Don&rsquo;t budget for it; revisit only if his research turns computational.</li>
+    </ul>
+    <p style="margin:6px 0 0"><small>Some product/pricing specifics here were corroborated from official-page search snippets rather than loaded directly (vendor bot-blocking) &mdash; see Section 10. None affect the recommendation: start on Pro.</small></p>
+  </div>
+
+  <h3>3.2 &nbsp;When (and whether) to go beyond Pro</h3>
+  <p><strong>Claude Max</strong> ($100/mo for 5&times; usage; $200/mo for 20&times;) buys more usage and priority, not different core features. Ez should start on <strong>Pro</strong> and only step up to Max if he repeatedly hits limits during heavy synthesis or data-analysis days &mdash; likely around Phases 3&ndash;4 or 7, if at all. It is a usage upgrade, not a prerequisite.</p>
+  <p><strong>Check first, might be free:</strong> Vanderbilt may participate in <strong>Claude for Education</strong> or provide institutional access to paid tools (e.g., Scite via the library, Microsoft 365 Copilot). A five-minute check with the library / IT could make some of this free. (No public self-serve .edu discount for consumer Claude existed as of mid-2026 &mdash; the education path is institution-licensed.)</p>
+
+  <h3>3.3 &nbsp;The full stack &amp; a realistic monthly budget</h3>
+  <table class="tight">
+    <tr><th>Layer</th><th>Tool</th><th>Cost</th><th>When</th></tr>
+    <tr><td>AI assistant, synthesis, writing, analysis, agents</td><td><strong>Claude Pro</strong></td><td><span class="pill paid">$20/mo</span></td><td>Always &mdash; month 1 on</td></tr>
+    <tr><td>Reference manager &amp; citation gatekeeper</td><td>Zotero</td><td><span class="pill free">Free</span></td><td>From Phase 3</td></tr>
+    <tr><td>Grounded discovery &amp; subfield mapping</td><td>Semantic Scholar, ResearchRabbit</td><td><span class="pill free">Free</span></td><td>From Phase 3</td></tr>
+    <tr><td>Grounded close-reading + audio overviews</td><td>NotebookLM (free tier)</td><td><span class="pill free">Free</span></td><td>From Phase 3</td></tr>
+    <tr><td>Evidence tables from real papers</td><td>Elicit (free tier, or Plus)</td><td><span class="pill opt">$0&ndash;12/mo</span></td><td>Phase 3, systematic-review weeks</td></tr>
+    <tr><td>&ldquo;Did this finding hold up?&rdquo;</td><td>Scite (check library first)</td><td><span class="pill opt">$0&ndash;12/mo</span></td><td>Optional, Phase 3</td></tr>
+    <tr><td>Scientific figures &amp; schematics</td><td>BioRender (academic/student)</td><td><span class="pill opt">~$35/mo</span></td><td>Phase 6 &amp; when making figures</td></tr>
+    <tr><td>Free diagramming</td><td>draw.io, Excalidraw</td><td><span class="pill free">Free</span></td><td>Anytime</td></tr>
+    <tr><td>AI images for slides</td><td>Google Gemini (free tier)</td><td><span class="pill free">Free</span></td><td>Phase 6</td></tr>
+    <tr><td>AI slide decks</td><td>Gamma (free, or Plus $8&ndash;10)</td><td><span class="pill opt">$0&ndash;10/mo</span></td><td>Phase 6</td></tr>
+    <tr><td>Design/posters + Claude connector</td><td>Canva (free / Education free)</td><td><span class="pill free">Free*</span></td><td>Phase 6</td></tr>
+    <tr><td>Optional usage upgrade</td><td>Claude Max</td><td><span class="pill opt">+$100/mo</span></td><td>Only if hitting limits</td></tr>
+  </table>
+  <p class="src">*Canva for Education is free if eligible; otherwise a free personal tier covers basic needs. Prices are academic/student rates where available and were current as of July 2026 &mdash; confirm at signup with a .edu email.</p>
+
+  <div class="grid2">
+    <div class="box good">
+      <div class="box-t">Typical month</div>
+      <p style="margin:0"><strong>$20</strong> (Pro alone) for most months. A figure-heavy or systematic-review month might reach <strong>$35&ndash;$55</strong> with BioRender + Elicit added. Even stacking Max on top stays under <strong>$160</strong> &mdash; below the cap with room to spare.</p>
+    </div>
+    <div class="box ink">
+      <div class="box-t">The one-line spending rule</div>
+      <p style="margin:0">Pay for Claude Pro always. Add a second paid tool <em>only</em> in the phase that uses it, and cancel it when that phase ends. Everything else in this plan is genuinely free.</p>
+    </div>
+  </div>
+</div>
+<!-- ===================== SECTION 4 (intro + phases 0-3) ===================== -->
+<div class="section" id="s4">
+  <div class="section-head">
+    <div class="kicker">Section 4</div>
+    <h2>The phased timeline</h2>
+    <hr class="rule">
+  </div>
+  <p class="lead">Nine phases over ~26 weeks. Each lists its objectives, a short verified resource set, a mandatory hands-on exercise on Ez&rsquo;s own lab material, and the milestone that closes it. Links and costs for every resource are consolidated in Section 7.</p>
+  <div class="box ink">
+    <div class="box-t">How to read each phase</div>
+    <p style="margin:0"><strong>Learn</strong> = the ~20-minute inputs. <strong>Do</strong> = the ~40-minute practice, always on real work. <strong>Milestone</strong> = the artifact he produces and self-scores (Section 5) before advancing. Resource names in <strong>bold</strong> are detailed in Section 7.</p>
+  </div>
+</div>
+
+<!-- PHASE 0 -->
+<div class="section" id="s4p0">
+  <div class="section-head">
+    <span class="phase-tag">Phase 0</span> &nbsp;<span class="wk">WEEK 1 (PART) &middot; 2&ndash;3 HRS &middot; DOMAINS D3, D9</span>
+    <h2 style="margin-top:8px">Setup &amp; first contact</h2>
+  </div>
+  <p>The goal of this short phase is zero friction: accounts live, tools installed, and one genuinely useful interaction &mdash; so momentum starts on day one. No terminal, no coding.</p>
+
+  <h4>Do</h4>
+  <ul>
+    <li>Create/upgrade to <strong>Claude Pro</strong> ($20/mo). Install the <strong>Claude desktop app</strong> (Mac or Windows) and try <strong>claude.ai</strong> in the browser &mdash; no command line involved.</li>
+    <li>In account settings, review privacy/memory/training controls and set them to his comfort (see data-hygiene box, Section 1).</li>
+    <li>Make sure he has a <strong>Google account</strong> (for the free NotebookLM and Gemini used later).</li>
+    <li>Start the <strong>AI Lab Notebook</strong> (a single Google Doc or Claude Project) &mdash; every session&rsquo;s notes go here.</li>
+    <li><strong>First useful chat:</strong> paste the abstract of a paper he&rsquo;s currently reading and ask Claude to explain the key finding, define three unfamiliar terms, and list two questions a skeptical reviewer would ask.</li>
+  </ul>
+
+  <h4>Learn (light)</h4>
+  <ul>
+    <li>Skim the <strong>Anthropic Academy</strong> catalog and bookmark it &mdash; free official courses he&rsquo;ll use in Phases 2 and 7.</li>
+  </ul>
+
+  <div class="mile"><div class="mh">✦ Checkpoint 0</div>Accounts are live, the desktop app opens, and he has had one chat that actually helped him understand a paper. The AI Lab Notebook exists with its first entry.</div>
+</div>
+
+<!-- PHASE 1 -->
+<div class="section" id="s4p1">
+  <div class="section-head">
+    <span class="phase-tag">Phase 1</span> &nbsp;<span class="wk">WEEKS 1&ndash;3 &middot; 12&ndash;14 HRS &middot; DOMAINS D1, D9</span>
+    <h2 style="margin-top:8px">Foundations: what AI &amp; LLMs really are</h2>
+  </div>
+  <p>Before using the tools deeply, Ez builds an honest mental model of what&rsquo;s under the hood. As a neuroscientist he&rsquo;ll find the neural-network framing intuitive &mdash; and understanding <em>why</em> these systems hallucinate is what makes him a safe, critical user forever after.</p>
+
+  <h4>Objectives</h4>
+  <p>Explain AI vs ML vs deep learning; what a neural network and an LLM are; pretraining, fine-tuning, and RLHF; tokens, context windows, embeddings, parameters; and the mechanistic reason hallucinations happen.</p>
+
+  <h4>Learn (chunk the long videos across sessions)</h4>
+  <ul>
+    <li><strong>3Blue1Brown</strong> &mdash; &ldquo;But what is a neural network?&rdquo; (Ch.1, ~19 min) and the short &ldquo;Large language models explained briefly&rdquo; (~8 min). The best visual intuition anywhere; watch the transformer &amp; attention chapters (Ch.5&ndash;6) later in the phase.</li>
+    <li><strong>Andrej Karpathy</strong> &mdash; &ldquo;[1hr Talk] Intro to Large Language Models&rdquo; (~1 hr, split over 2&ndash;3 sessions). The single best conceptual map of training and the &ldquo;LLM as OS/agent&rdquo; idea.</li>
+    <li><strong>Tim Lee &amp; Sean Trott</strong> &mdash; &ldquo;Large language models, explained with a minimum of math and jargon&rdquo; (long read). A cognitive scientist co-authored it, so the framing lands well for a neuroscientist &mdash; embeddings, transformers, training.</li>
+    <li><strong>Structured anchor (pick one, run through the phase):</strong> <strong>Elements of AI</strong> (Helsinki, free) for a no-math &ldquo;what is AI&rdquo; spine, <em>or</em> <strong>Generative AI for Everyone</strong> (DeepLearning.AI, free audit) for the modern LLM-era version.</li>
+  </ul>
+
+  <h4>Do</h4>
+  <ul>
+    <li>After each video, write a 3-sentence explainer <em>in his own words</em> in the AI Lab Notebook. Teaching-back is the retention trick.</li>
+    <li>Ask Claude to quiz him on the day&rsquo;s concept, then to grade his answers and correct misconceptions.</li>
+    <li>Deliberately <strong>catch a hallucination</strong>: ask Claude for five references on a niche neuro topic, then check whether they exist (they may not). This lesson underwrites all of Phase 3.</li>
+  </ul>
+
+  <div class="mile"><div class="mh">✦ Milestone 1 &mdash; &ldquo;Explain an LLM&rdquo;</div>Record a <strong>5-minute talk</strong> (phone camera or slides) explaining to a labmate what an LLM is, how it&rsquo;s trained, and why it hallucinates &mdash; no notes. Self-score D1 on the rubric. <em>Local-expert tell:</em> he can field &ldquo;so is it just autocomplete?&rdquo; without hand-waving.</div>
+</div>
+
+<!-- PHASE 2 -->
+<div class="section" id="s4p2">
+  <div class="section-head">
+    <span class="phase-tag">Phase 2</span> &nbsp;<span class="wk">WEEKS 4&ndash;5 &middot; 9&ndash;10 HRS &middot; DOMAINS D2, D3</span>
+    <h2 style="margin-top:8px">Claude fluency &amp; prompting</h2>
+  </div>
+  <p>Now he turns the mental model into skill: getting consistently strong output, and setting up Claude to carry his research context. This is where the daily productivity gains begin.</p>
+
+  <h4>Objectives</h4>
+  <p>Prompt deliberately (role, context, constraints, examples, structured output, iteration); use Projects, Artifacts, and Cowork; choose the right surface for a task; build a reusable prompt library.</p>
+
+  <h4>Learn</h4>
+  <ul>
+    <li><strong>Anthropic Prompt Engineering Interactive Tutorial</strong> (official, free) &mdash; work the concepts; a non-coder can skip the code cells and keep the prompting lessons.</li>
+    <li><strong>Anthropic Academy</strong> prompting course (free, official) for a structured pass with a completion certificate.</li>
+    <li><strong>Andrej Karpathy</strong> &mdash; &ldquo;How I Use LLMs&rdquo; (practical companion; tool use, web search, thinking models) &mdash; chunk across sessions.</li>
+  </ul>
+
+  <h4>Do (all on real lab work)</h4>
+  <ul>
+    <li>Create a <strong>Claude Project</strong> for his thesis area: add custom instructions (his subfield, techniques, writing style) and upload 5&ndash;10 core papers and his lab&rsquo;s key protocols as project knowledge.</li>
+    <li>Start a <strong>prompt library</strong> in the AI Lab Notebook: reusable prompts for &ldquo;summarize this paper for my committee,&rdquo; &ldquo;critique this paragraph,&rdquo; &ldquo;turn these bullet points into methods prose,&rdquo; &ldquo;explain this technique to a rotation student.&rdquo;</li>
+    <li>Use an <strong>Artifact</strong> to build a comparison table of three methods he&rsquo;s choosing between.</li>
+    <li>Try <strong>Cowork</strong> on a folder: point it at a set of PDFs and ask for a one-paragraph summary of each.</li>
+  </ul>
+
+  <div class="mile"><div class="mh">✦ Milestone 2 &mdash; Thesis Project + prompt library</div>A working Claude Project loaded with his research context, plus <strong>10+ reusable prompts</strong> he actually uses. Demonstrate by getting a genuinely useful, well-structured answer to a real research question in a single well-formed prompt. Self-score D2, D3.</div>
+</div>
+
+<!-- PHASE 3 -->
+<div class="section" id="s4p3">
+  <div class="section-head">
+    <span class="phase-tag">Phase 3</span> &nbsp;<span class="wk">WEEKS 6&ndash;9 &middot; 18&ndash;20 HRS &middot; DOMAINS D4, D9</span>
+    <h2 style="margin-top:8px">Literature review &amp; synthesis</h2>
+  </div>
+  <p>The highest-leverage research skill in the plan &mdash; and the one with the sharpest integrity risk. The core discipline: <strong>discovery happens in grounded tools that search real papers; Claude and NotebookLM synthesize only what he has actually retrieved; Zotero is the gatekeeper for every citation.</strong></p>
+
+  <h4>Objectives</h4>
+  <p>Run an end-to-end literature workflow &mdash; discover, map, synthesize, and manage references &mdash; producing a synthesis with no fabricated or misattributed citations, every claim traceable to a real paper he has read.</p>
+
+  <h4>Learn the tools (each &lt;1 hr; use verified tutorials in Section 7)</h4>
+  <table class="tight">
+    <tr><th>Tool</th><th>Role in the workflow</th><th>Cost</th></tr>
+    <tr><td><strong>Zotero</strong></td><td>Reference manager &amp; citation gatekeeper &mdash; only real, retrieved papers live here</td><td><span class="pill free">Free</span></td></tr>
+    <tr><td><strong>Semantic Scholar</strong></td><td>Free search backbone + TLDRs + alerts</td><td><span class="pill free">Free</span></td></tr>
+    <tr><td><strong>ResearchRabbit</strong></td><td>Visual citation-network mapping of a subfield; syncs to Zotero</td><td><span class="pill free">Free</span></td></tr>
+    <tr><td><strong>Elicit</strong></td><td>Structured evidence tables from real papers (methods, n, outcomes)</td><td><span class="pill opt">Free / $12</span></td></tr>
+    <tr><td><strong>Consensus</strong></td><td>Fast citation-backed check on yes/no empirical claims</td><td><span class="pill opt">Free / ~$10</span></td></tr>
+    <tr><td><strong>Scite</strong></td><td>Did a finding hold up? Supporting vs contrasting citations</td><td><span class="pill opt">Library / $12</span></td></tr>
+    <tr><td><strong>NotebookLM</strong></td><td>Grounded close-reading of papers he uploads; cites every claim; audio overviews</td><td><span class="pill free">Free</span></td></tr>
+    <tr><td><strong>Claude (PubMed connector)</strong></td><td>Synthesis, drafting, and reasoning across retrieved papers</td><td>In Pro</td></tr>
+  </table>
+
+  <h4>Do</h4>
+  <ul>
+    <li>Pick a <strong>real question</strong> from his project (e.g., &ldquo;what&rsquo;s known about [receptor/pathway] in [cell type] during [process]&rdquo;).</li>
+    <li><strong>Discover:</strong> map the subfield in ResearchRabbit, pull an evidence table in Elicit, sanity-check claims in Consensus, and check whether key findings replicated in Scite. Import everything real into <strong>Zotero</strong>.</li>
+    <li><strong>Synthesize:</strong> load the retrieved PDFs into <strong>NotebookLM</strong> and a <strong>Claude Project</strong>; ask each to summarize themes, agreements, and open questions &mdash; every claim cited to a source he has.</li>
+    <li><strong>Verify:</strong> for every citation, confirm it exists and says what&rsquo;s claimed (quote-search in the PDF / Google Scholar; check DOIs via Crossref; screen older references against <strong>Retraction Watch</strong>).</li>
+  </ul>
+
+  <div class="box warn">
+    <div class="box-t">The non-negotiable rule</div>
+    <p style="margin:0">Never ask Claude (or any chatbot) to &ldquo;give me references for X&rdquo; from memory &mdash; it will produce real-looking citations that don&rsquo;t exist. Fabricated-reference rates in the literature have risen sharply. Ask it to reason only over papers Ez supplies. Zotero is the single source of truth for his bibliography.</p>
+  </div>
+
+  <div class="mile"><div class="mh">✦ Milestone 3 &mdash; Verified mini-synthesis</div>A <strong>2&ndash;3 page synthesis</strong> on a real question, ~10&ndash;15 papers, with a Zotero library and a short <strong>verification log</strong> proving every citation was checked &mdash; <strong>zero fabricated or misattributed references</strong>. This is the plan&rsquo;s integrity keystone. Self-score D4, D9. <em>Local-expert tell:</em> he can teach the &ldquo;discover-then-synthesize, never-invent&rdquo; workflow to a labmate.</div>
+</div>
+<!-- PHASE 4 -->
+<div class="section" id="s4p4">
+  <div class="section-head">
+    <span class="phase-tag">Phase 4</span> &nbsp;<span class="wk">WEEKS 10&ndash;12 &middot; 14&ndash;15 HRS &middot; DOMAINS D5, D9</span>
+    <h2 style="margin-top:8px">Data analysis without coding</h2>
+  </div>
+  <p>Ez has no coding background &mdash; and won&rsquo;t need one. Modern AI tools write and run the analysis code invisibly; he works entirely in plain English. The skill to build is <strong>directing and checking</strong> the analysis, not writing it.</p>
+
+  <h4>Objectives</h4>
+  <p>Take a real CSV/Excel dataset, analyze it conversationally &mdash; clean, describe, run appropriate basic tests, and make publication-style plots &mdash; interpret critically, catch statistical mistakes, and keep it reproducible.</p>
+
+  <h4>Learn</h4>
+  <ul>
+    <li><strong>Claude for Excel</strong> (official support guide) &mdash; his primary path, since Claude is his main tool.</li>
+    <li><strong>OpenAI &ldquo;Data analysis with ChatGPT&rdquo;</strong> (official help doc) &mdash; a clear reference for the upload-and-ask pattern (optional; only if he also keeps a ChatGPT Plus seat).</li>
+    <li><strong>Coupler.io &mdash; &ldquo;Use Claude for Data Analytics (Safely)&rdquo;</strong> &mdash; especially the privacy section: what not to paste.</li>
+    <li><em>Preview of Phase 7:</em> <strong>VelvetShark &mdash; &ldquo;Data analysis with Claude Code&rdquo;</strong> for datasets too big for chat upload.</li>
+  </ul>
+
+  <h4>Do (on a real dataset from his rotation/lab)</h4>
+  <ul>
+    <li>Upload a real spreadsheet; ask Claude to describe its structure, flag data-quality issues, and propose a cleaning plan &mdash; then approve each step.</li>
+    <li>Run <strong>descriptive stats</strong> and generate a clear plot (bar with error bars, scatter, or time-course as fits his data).</li>
+    <li>Ask which statistical test is appropriate and <strong>why</strong> &mdash; then have it check assumptions (normality, sample size, independence). <em>Deliberately probe:</em> ask a leading question and confirm it pushes back rather than agreeing.</li>
+    <li>Have it produce a short, plain-language interpretation he could show his PI &mdash; and independently sanity-check one number by hand.</li>
+  </ul>
+
+  <div class="box warn">
+    <div class="box-t">Statistics guardrail</div>
+    <p style="margin:0">AI will confidently run the <em>wrong</em> test if asked leading questions. Ez should treat it as a fast analyst who needs supervision: make it justify each test, state assumptions, and show its work. For anything headed toward publication, a real statistician or his PI still signs off. Never upload identifiable human data without IRB/data-use clearance.</p>
+  </div>
+
+  <div class="mile"><div class="mh">✦ Milestone 4 &mdash; Real dataset &rarr; stats + figure</div>Start from a raw lab spreadsheet and produce a <strong>cleaned dataset, an appropriate statistical result he can defend, and a publication-style figure</strong> &mdash; documenting the steps so it&rsquo;s reproducible. Self-score D5. <em>Tell:</em> he caught at least one thing the AI got wrong or oversimplified.</div>
+</div>
+
+<!-- PHASE 5 -->
+<div class="section" id="s4p5">
+  <div class="section-head">
+    <span class="phase-tag">Phase 5</span> &nbsp;<span class="wk">WEEKS 13&ndash;15 &middot; 14&ndash;15 HRS &middot; DOMAINS D6, D9</span>
+    <h2 style="margin-top:8px">Scientific writing &amp; research integrity</h2>
+  </div>
+  <p>Writing is where AI saves the most time and carries the most policy risk. Ez learns to use it as a tireless editor and sparring partner &mdash; firmly inside the rules that govern manuscripts and grants.</p>
+
+  <h4>Objectives</h4>
+  <p>Use AI to outline, draft from his own notes, tighten, and pressure-test scientific prose (manuscript sections, aims, rebuttals, plain-language summaries) &mdash; with correct disclosure and no policy violations.</p>
+
+  <h4>Learn (read the policy first &mdash; it&rsquo;s load-bearing)</h4>
+  <ul>
+    <li><strong>ICMJE Recommendations</strong> &mdash; AI cannot be an author; all AI use in writing/editing must be disclosed; authors are fully responsible for every fact and citation; reviewers must not upload manuscripts to AI tools.</li>
+    <li><strong>NIH NOT-OD-23-149</strong> &mdash; generative AI is prohibited in peer review (uploading applications breaches confidentiality).</li>
+    <li><strong>NIH &ldquo;Apply Responsibly&rdquo; (2025)</strong> &mdash; applications substantially developed by AI aren&rsquo;t considered original; directly relevant to his future F30/F31 and grant writing.</li>
+    <li><strong>ACS Nano best-practices</strong> and the <strong>MDPI good-practices</strong> checklist &mdash; concrete OK-vs-not-OK examples.</li>
+  </ul>
+
+  <div class="grid2">
+    <div class="box good">
+      <div class="box-t">Appropriate</div>
+      <ul style="margin:0">
+        <li>Grammar, clarity, flow, and structure edits on <em>his own</em> draft</li>
+        <li>Reordering and tightening a rebuttal letter he wrote</li>
+        <li>Plain-language summaries and outlines</li>
+        <li>&ldquo;What would a reviewer attack here?&rdquo; critique</li>
+        <li>Disclosed use, per journal policy</li>
+      </ul>
+    </div>
+    <div class="box warn">
+      <div class="box-t">Not appropriate</div>
+      <ul style="margin:0">
+        <li>Generating substantive content and passing it off as his</li>
+        <li>Any fabricated data, figures, or citations</li>
+        <li>Undisclosed use where disclosure is required</li>
+        <li>Uploading confidential manuscripts under review</li>
+        <li>Any AI use in NIH peer review</li>
+      </ul>
+    </div>
+  </div>
+
+  <h4>Do</h4>
+  <ul>
+    <li>Take a <strong>real paragraph he wrote</strong> and iterate it with Claude for clarity &mdash; keeping his voice and every claim his own.</li>
+    <li>Draft a <strong>Specific Aims</strong> outline or a <strong>methods section</strong> from his own bullet points; have Claude critique it as a study-section reviewer.</li>
+    <li>Draft a <strong>response-to-reviewers</strong> letter for a paper (his or a mentor&rsquo;s, with permission).</li>
+    <li>Write a proper <strong>AI-use disclosure statement</strong> for a manuscript.</li>
+  </ul>
+
+  <div class="mile"><div class="mh">✦ Milestone 5 &mdash; Edited section + disclosure</div>A piece of real scientific writing he <strong>materially improved with AI while staying within policy</strong>, plus a correct disclosure statement and a one-paragraph note on where he drew the line. Self-score D6, D9.</div>
+</div>
+
+<!-- PHASE 6 -->
+<div class="section" id="s4p6">
+  <div class="section-head">
+    <span class="phase-tag">Phase 6</span> &nbsp;<span class="wk">WEEKS 16&ndash;17 &middot; 9&ndash;10 HRS &middot; DOMAINS D7, D9</span>
+    <h2 style="margin-top:8px">Figures, slides &amp; media</h2>
+  </div>
+  <p>Claude has no image or video generation, so this phase is deliberately non-Anthropic &mdash; used directly or through the Canva&ndash;Claude connector. The skill is producing clear scientific visuals fast, inside a hard ethical line.</p>
+
+  <h4>Objectives</h4>
+  <p>Make publication-grade schematics (BioRender), concept graphics for slides/posters (Gemini, Canva), and AI-generated decks (Gamma) &mdash; efficiently and without ever fabricating data-like imagery.</p>
+
+  <div class="box warn">
+    <div class="box-t">The bright line (applies to everything here)</div>
+    <p style="margin:0">Never use any image or video tool to generate or &ldquo;clean up&rdquo; anything that could pass as experimental data &mdash; blots, micrographs, histology, flow plots, IHC. That is fabrication, journals screen for it, and it ends careers. AI imagery is for <strong>conceptual illustration and slide graphics only</strong>, disclosed per journal policy.</p>
+  </div>
+
+  <h4>Learn &amp; Do</h4>
+  <ul>
+    <li><strong>BioRender</strong> (student/academic plan) with its official Learning Hub &mdash; build a <strong>real schematic</strong> of his experimental design or a signaling pathway in his system. Its icons are vetted for scientific accuracy; general image AI can&rsquo;t match that. (For non-biological flowcharts, free <strong>draw.io</strong>/<strong>Excalidraw</strong> work fine.)</li>
+    <li><strong>Google Gemini</strong> (free) &mdash; generate a concept/background graphic for a title slide. Strong photorealism, best free access.</li>
+    <li><strong>Gamma</strong> (free, or Plus ~$8&ndash;10) &mdash; turn his Milestone-3 synthesis or an outline into a <strong>lab-meeting deck</strong> in minutes, then refine.</li>
+    <li><strong>Canva</strong> (free / Education) &mdash; optionally connect the verified <strong>Canva MCP connector</strong> to Claude and drive a poster/slide design from a chat.</li>
+  </ul>
+
+  <div class="mile"><div class="mh">✦ Milestone 6 &mdash; Figure + deck</div>One <strong>BioRender schematic</strong> good enough for a real talk or paper, and one <strong>AI-generated slide deck</strong> for an actual lab meeting &mdash; produced in a fraction of his usual time. Self-score D7. <em>Tell:</em> he can state exactly why none of it crosses the data-fabrication line.</div>
+</div>
+
+<!-- PHASE 7 -->
+<div class="section" id="s4p7">
+  <div class="section-head">
+    <span class="phase-tag">Phase 7</span> &nbsp;<span class="wk">WEEKS 18&ndash;22 &middot; 22&ndash;25 HRS &middot; DOMAINS D8, D9</span>
+    <h2 style="margin-top:8px">Claude Code, agents &amp; connectors</h2>
+  </div>
+  <p>The most ambitious phase, and the reason it&rsquo;s five weeks: Ez has never used a terminal. The on-ramp is gentle and science-first &mdash; Claude Code as a tool that reads a folder of files and does tedious work, <em>not</em> as a way to build software.</p>
+
+  <h4>Objectives</h4>
+  <p>Use the terminal at a basic level; run Claude Code to process folders of PDFs/data and automate chores; understand agents conceptually; connect Claude to PubMed and Google Drive via MCP; and know when an agent should not act unsupervised.</p>
+
+  <h4>Week-by-week (gentlest &rarr; most capable)</h4>
+  <table class="tight">
+    <tr><th>Wk</th><th>Focus</th><th>Key resources (Section 7)</th></tr>
+    <tr><td>18</td><td>Terminal primer &mdash; open it, navigate folders, run a command</td><td><strong>Anthropic Terminal guide</strong>; <strong>MDN command-line</strong> (§1&ndash;3)</td></tr>
+    <tr><td>19</td><td>What an agent <em>is</em> (chatbot answers; agent acts, in a loop)</td><td><strong>IBM &ldquo;What are AI Agents?&rdquo;</strong>; <strong>explainX</strong> beginner guide</td></tr>
+    <tr><td>20</td><td>Install &amp; first Claude Code session (substitute science tasks for the code examples)</td><td><strong>Claude Code Quickstart</strong>; <strong>CC for Everyone &mdash; Non-Developers</strong></td></tr>
+    <tr><td>21</td><td>Claude Code for research: a folder of PDFs &rarr; themes &amp; evidence tables</td><td><strong>CC for Everyone &mdash; Researchers</strong>; <strong>Academy: Claude Code in Action</strong></td></tr>
+    <tr><td>22</td><td>MCP &amp; connectors: plug Claude into PubMed &amp; Google Drive</td><td><strong>MCP intro</strong> (Anthropic + modelcontextprotocol.io)</td></tr>
+  </table>
+
+  <h4>Do</h4>
+  <ul>
+    <li>Complete the terminal primer until &ldquo;open a terminal, go to a folder, run one command&rdquo; feels routine. (On Windows, Anthropic&rsquo;s native installer works &mdash; WSL is not required.)</li>
+    <li>Install Claude Code; in his first session, ask it to summarize a single PDF in a folder.</li>
+    <li><strong>The signature exercise:</strong> point Claude Code at a folder of 10&ndash;20 papers/notes and have it produce a cross-file <strong>evidence table or themed summary</strong> with source filenames and verbatim quotes. (Note practical limits: scan-only PDFs need OCR first; long PDFs are read in chunks.)</li>
+    <li>Enable the <strong>PubMed</strong> and <strong>Google Drive</strong> connectors in Claude and run one real task through each.</li>
+  </ul>
+
+  <div class="box ink">
+    <div class="box-t">Reference, not homework</div>
+    <p style="margin:0">Anthropic&rsquo;s <strong>&ldquo;Building effective agents&rdquo;</strong> is the canonical piece, but it&rsquo;s written for engineers. Ez should skim only the opening definitions and the &ldquo;workflows vs agents&rdquo; distinction &mdash; and save the rest for if he ever goes deeper.</p>
+  </div>
+
+  <div class="mile"><div class="mh">✦ Milestone 7 &mdash; PDF folder &rarr; evidence table</div>Using Claude Code, turn a folder of real papers into a <strong>useful cross-document artifact</strong> (themed synthesis or evidence table with sources), and connect at least <strong>one MCP connector</strong> (PubMed or Drive) to a real task. Self-score D8. <em>Tell:</em> he can explain when he&rsquo;d <em>not</em> let the agent act without review.</div>
+</div>
+
+<!-- PHASE 8 -->
+<div class="section" id="s4p8">
+  <div class="section-head">
+    <span class="phase-tag">Phase 8</span> &nbsp;<span class="wk">WEEKS 23&ndash;26 &middot; 16&ndash;18 HRS &middot; ALL DOMAINS</span>
+    <h2 style="margin-top:8px">Integration, capstone &amp; the keep-current habit</h2>
+  </div>
+  <p>The final phase chains every skill into one real research workflow, consolidates judgment, and sets up the lightweight habit that keeps him current after the plan ends.</p>
+
+  <h4>Learn (consolidate judgment)</h4>
+  <ul>
+    <li><strong>Ethan Mollick &mdash; <em>Co-Intelligence</em></strong> (read across the phase): the best narrative frame for working <em>with</em> AI as coworker, tutor, and coach &mdash; and for everyday/personal use (email, planning, learning).</li>
+    <li><strong>MIT Sloan &mdash; &ldquo;When AI Gets It Wrong&rdquo;</strong> and <strong>AI Snake Oil / normaltech.ai</strong>: the skeptical, integrity-minded counterweight to hype every scientist should carry.</li>
+    <li>Set up his <strong>continuing-education habit</strong> from Section 9 &mdash; two podcasts, two newsletters, no more.</li>
+  </ul>
+
+  <h4>Do &mdash; the capstone</h4>
+  <p>Choose a real, small research question and run it <strong>end to end, AI-accelerated</strong>, documenting each step and every verification:</p>
+  <ol>
+    <li><strong>Discover &amp; synthesize</strong> the relevant literature (Phase 3 workflow), citations verified.</li>
+    <li><strong>Analyze</strong> a relevant dataset conversationally and make a figure (Phase 4).</li>
+    <li><strong>Build</strong> a schematic and a short deck (Phase 6).</li>
+    <li><strong>Write</strong> a 1&ndash;2 page brief with AI editing, within policy, with a disclosure note (Phase 5).</li>
+    <li><strong>Automate</strong> one chore in the process with Claude Code or a connector (Phase 7).</li>
+    <li>Keep an <strong>integrity/verification log</strong> throughout (Phase 9 judgment).</li>
+  </ol>
+
+  <div class="mile"><div class="mh">✦ Milestone 8 &mdash; Capstone research sprint</div>A single documented workflow that takes a real question from literature to a written, figure-supported brief &mdash; every AI use appropriate, every citation and number verified. Re-score <strong>all nine domains</strong>. Meeting the target profile (Section 2) = locally expert. <em>Final tell:</em> a labmate could follow his write-up and reproduce the workflow.</div>
+
+  <div class="box good">
+    <div class="box-t">After the plan</div>
+    <p style="margin:0">Fluency decays without use and tools drift fast. Ez keeps sharp by (1) using these workflows in his actual research daily, (2) the Section 9 continuing-ed habit, and (3) revisiting his rubric each semester to push D5/D7/D8 toward expert as his project demands.</p>
+  </div>
+</div>
+<!-- ===================== SECTION 5 ===================== -->
+<div class="section" id="s5">
+  <div class="section-head">
+    <div class="kicker">Section 5</div>
+    <h2>Milestones &amp; checkpoints</h2>
+    <hr class="rule">
+  </div>
+  <p class="lead">Eight milestones, one per phase, each a real artifact Ez produces and self-scores &mdash; so &ldquo;progress toward expert&rdquo; is a tracker he fills in, not a feeling. Print this page; use it at each mentor check-in.</p>
+
+  <table>
+    <tr><th style="width:6%">#</th><th style="width:26%">Milestone artifact</th><th style="width:12%">Domains</th><th style="width:20%">&ldquo;Done&rdquo; looks like</th><th>Self-score (N / F / P / LE)</th></tr>
+    <tr><td><strong>0</strong></td><td>Setup &amp; first useful chat</td><td>D3</td><td>Accounts live; one chat that helped</td><td>&mdash;</td></tr>
+    <tr><td><strong>1</strong></td><td>5-min &ldquo;explain an LLM&rdquo; talk</td><td>D1, D9</td><td>Explains training + hallucination, no notes</td><td>D1 ___&nbsp; D9 ___</td></tr>
+    <tr><td><strong>2</strong></td><td>Thesis Project + 10-prompt library</td><td>D2, D3</td><td>One prompt &rarr; genuinely useful answer</td><td>D2 ___&nbsp; D3 ___</td></tr>
+    <tr><td><strong>3</strong></td><td>Verified mini-synthesis (10&ndash;15 papers)</td><td>D4, D9</td><td><strong>Zero fabricated citations</strong>; verification log</td><td>D4 ___&nbsp; D9 ___</td></tr>
+    <tr><td><strong>4</strong></td><td>Real dataset &rarr; stats + figure</td><td>D5, D9</td><td>Defensible test; caught an AI error</td><td>D5 ___&nbsp; D9 ___</td></tr>
+    <tr><td><strong>5</strong></td><td>AI-edited section + disclosure</td><td>D6, D9</td><td>Improved &amp; within ICMJE/NIH policy</td><td>D6 ___&nbsp; D9 ___</td></tr>
+    <tr><td><strong>6</strong></td><td>BioRender figure + AI deck</td><td>D7</td><td>Talk-ready; no data-like fabrication</td><td>D7 ___</td></tr>
+    <tr><td><strong>7</strong></td><td>PDF folder &rarr; evidence table + connector</td><td>D8, D9</td><td>Cross-doc artifact; 1 MCP connector live</td><td>D8 ___&nbsp; D9 ___</td></tr>
+    <tr><td><strong>8</strong></td><td>Capstone research sprint (end-to-end)</td><td>All</td><td>Reproducible; every use appropriate &amp; verified</td><td>All ___</td></tr>
+  </table>
+
+  <p class="src">N = Novice, F = Functional, P = Proficient, LE = Local Expert (rubric, Section 2). Target end-state: LE in D1&ndash;D4, D6, D9; P in D5, D7, D8.</p>
+
+  <div class="grid2">
+    <div class="box accent">
+      <div class="box-t">Fast checkpoints between milestones</div>
+      <ul style="margin:0">
+        <li><strong>Weekly (2 min):</strong> did I do all my sessions on <em>real</em> lab material? Is my AI Lab Notebook current?</li>
+        <li><strong>Per phase:</strong> can I explain this phase&rsquo;s skill to a labmate in 3 minutes?</li>
+        <li><strong>The verification reflex:</strong> did anything leave a chat and enter my science unchecked this week? (Target: never.)</li>
+      </ul>
+    </div>
+    <div class="box good">
+      <div class="box-t">What tips a domain into &ldquo;Local Expert&rdquo;</div>
+      <p style="margin:0">Two signals, both observable: (1) he <strong>teaches the workflow</strong> to someone else and they succeed with it; and (2) he <strong>predicts the failure mode</strong> before it happens and designs around it. When both are true for a domain, mark it LE.</p>
+    </div>
+  </div>
+</div>
+<!-- ===================== SECTION 6 ===================== -->
+<div class="section" id="s6">
+  <div class="section-head">
+    <div class="kicker">Section 6 &middot; Deliverable 2</div>
+    <h2>Glossary of AI terms</h2>
+    <hr class="rule">
+  </div>
+  <p class="lead">Plain-English definitions, grouped so Ez can learn them in the order the plan introduces them. Skim it in Phase 1; return to it whenever a term appears.</p>
+
+  <h3>Foundations</h3>
+  <dl class="gloss">
+    <dt>Artificial intelligence (AI)</dt><dd>The broad field of building software that performs tasks we associate with human intelligence &mdash; recognizing patterns, using language, making decisions. An umbrella term, not one technology.</dd>
+    <dt>Machine learning (ML)</dt><dd>A branch of AI where systems <em>learn patterns from data</em> instead of following hand-written rules. Show it thousands of examples and it infers the rule itself.</dd>
+    <dt>Deep learning</dt><dd>ML using neural networks with many layers (&ldquo;deep&rdquo;). It powers essentially all of today&rsquo;s notable AI, including LLMs.</dd>
+    <dt>Neural network</dt><dd>A model loosely inspired by brain neurons: layers of simple units connected by weighted links. During training the weights adjust so the network maps inputs to useful outputs. (The neuroscience analogy is loose &mdash; artificial &ldquo;neurons&rdquo; are far simpler than biological ones.)</dd>
+    <dt>Parameters (weights)</dt><dd>The adjustable numbers inside a neural network &mdash; what it &ldquo;learns.&rdquo; Modern LLMs have billions. More parameters &ne; automatically better.</dd>
+    <dt>Generative AI</dt><dd>AI that <em>produces</em> new content &mdash; text, images, audio, code &mdash; rather than only classifying or predicting a label.</dd>
+    <dt>Large language model (LLM)</dt><dd>A very large neural network trained on huge amounts of text to predict likely next words. That single ability, at scale, yields writing, summarizing, answering, and reasoning. Claude, GPT, and Gemini are LLMs.</dd>
+    <dt>Foundation model</dt><dd>A large model trained on broad data that can be adapted to many downstream tasks &mdash; the &ldquo;base&rdquo; others build on.</dd>
+    <dt>Transformer</dt><dd>The neural-network architecture (introduced 2017) behind modern LLMs. Its key trick is <em>attention</em>. The &ldquo;T&rdquo; in GPT.</dd>
+    <dt>Multimodal</dt><dd>A model that handles more than one kind of input/output &mdash; e.g., text <em>and</em> images. Claude can read an image of a figure and discuss it.</dd>
+  </dl>
+
+  <h3>How models are built &amp; trained</h3>
+  <dl class="gloss">
+    <dt>Training</dt><dd>The process of adjusting a model&rsquo;s parameters by showing it data, so its outputs improve. Expensive and done by the model maker &mdash; not something Ez does.</dd>
+    <dt>Pretraining</dt><dd>The first, largest training stage: the model learns language and world patterns by predicting next tokens across an enormous text corpus. Produces a capable but unpolished &ldquo;base model.&rdquo;</dd>
+    <dt>Fine-tuning</dt><dd>Additional training on a narrower dataset to specialize or align a model&rsquo;s behavior after pretraining.</dd>
+    <dt>RLHF (reinforcement learning from human feedback)</dt><dd>A fine-tuning method where humans rank model outputs and the model is trained to prefer the better ones &mdash; a big reason modern assistants feel helpful and follow instructions.</dd>
+    <dt>Alignment</dt><dd>The effort to make a model&rsquo;s behavior match human intentions and values &mdash; helpful, honest, harmless.</dd>
+    <dt>Training data</dt><dd>The text (and images, etc.) a model learned from. Its coverage and biases shape what the model knows and gets wrong.</dd>
+    <dt>Knowledge cutoff</dt><dd>The date after which a model has no built-in knowledge, because its training data ended there. Anything newer must come from search or documents you provide.</dd>
+    <dt>Benchmark</dt><dd>A standardized test used to compare models (e.g., on reasoning or coding). Useful but imperfect proxies for real-world usefulness.</dd>
+  </dl>
+
+  <h3>Model mechanics &amp; internals</h3>
+  <dl class="gloss">
+    <dt>Token</dt><dd>The unit of text a model reads and writes &mdash; roughly a word-piece (~4 characters of English). Models &ldquo;think&rdquo; in tokens; pricing and limits are measured in them.</dd>
+    <dt>Context window</dt><dd>How much text (in tokens) a model can consider at once &mdash; the prompt plus its reply. Large windows let Claude hold many papers in mind simultaneously.</dd>
+    <dt>Embedding</dt><dd>A representation of text as a list of numbers (a vector) that captures meaning, so similar ideas sit near each other in &ldquo;meaning space.&rdquo; The basis of semantic search.</dd>
+    <dt>Inference</dt><dd>Running a trained model to get an output (as opposed to training it). Each chat message is an inference.</dd>
+    <dt>Temperature</dt><dd>A setting controlling randomness/creativity in output. Lower = more focused and repeatable; higher = more varied.</dd>
+    <dt>Reasoning / &ldquo;thinking&rdquo; models</dt><dd>Models that spend extra computation working through a problem step-by-step before answering, improving hard multi-step tasks.</dd>
+    <dt>Chain of thought</dt><dd>Prompting or training a model to show intermediate reasoning steps, which often improves accuracy on complex problems.</dd>
+  </dl>
+
+  <h3>Using models: prompting &amp; features</h3>
+  <dl class="gloss">
+    <dt>Prompt</dt><dd>What you send the model &mdash; your instructions, question, and any context. Prompt quality largely determines output quality.</dd>
+    <dt>Prompt engineering</dt><dd>The craft of writing effective prompts: giving role, context, constraints, examples, and a desired format.</dd>
+    <dt>System prompt</dt><dd>Background instructions that set a model&rsquo;s persistent behavior for a session (e.g., a Project&rsquo;s custom instructions).</dd>
+    <dt>Zero-shot / few-shot</dt><dd>Asking with no examples (zero-shot) vs. including a few worked examples (few-shot) to steer the output.</dd>
+    <dt>Context / grounding</dt><dd>Supplying source material (papers, data, docs) so the model answers <em>from that</em> rather than from memory &mdash; the key to trustworthy, citable output.</dd>
+    <dt>RAG (retrieval-augmented generation)</dt><dd>A pattern where the system first retrieves relevant documents, then has the model answer using them. Claude Projects and NotebookLM are RAG-style tools.</dd>
+    <dt>Project (Claude)</dt><dd>A persistent workspace with custom instructions and uploaded knowledge that every chat inside inherits &mdash; ideal for a thesis area.</dd>
+    <dt>Artifact (Claude)</dt><dd>A live side-panel workspace for a document, table, or small app the model builds and you can edit.</dd>
+    <dt>Cowork (Claude)</dt><dd>A desktop feature where Claude runs multi-step tasks over your files and folders in the background.</dd>
+    <dt>Canvas / workspace</dt><dd>General term (across tools) for an editable panel where AI-generated content is refined, as opposed to a linear chat.</dd>
+  </dl>
+
+  <h3>Agents, tools &amp; connectors</h3>
+  <dl class="gloss">
+    <dt>AI agent</dt><dd>A system that doesn&rsquo;t just answer but <em>acts</em>: it plans, uses tools, observes results, and loops toward a goal. A chatbot answers; an agent does.</dd>
+    <dt>Tool use / function calling</dt><dd>An LLM&rsquo;s ability to call external tools (search, a calculator, a database) to get real information or take actions beyond generating text.</dd>
+    <dt>Claude Code</dt><dd>Anthropic&rsquo;s agentic tool that works in a terminal or editor: it reads files, runs commands, and edits &mdash; useful for wrangling PDFs, data, and documents, not only for coding.</dd>
+    <dt>MCP (Model Context Protocol)</dt><dd>An open standard &mdash; a &ldquo;USB-C port for AI&rdquo; &mdash; that lets Claude connect to outside data and tools through a common plug instead of custom wiring.</dd>
+    <dt>Connector</dt><dd>A one-click MCP integration linking Claude to a service &mdash; e.g., PubMed, Google Drive, BioRender, Canva.</dd>
+    <dt>API (application programming interface)</dt><dd>A way for software to talk to a model programmatically, billed per token. Meant for building applications; a subscription is the right choice for an individual.</dd>
+    <dt>Terminal / command line</dt><dd>A text interface for giving a computer typed commands. Basic familiarity is enough to run Claude Code; deep expertise isn&rsquo;t needed.</dd>
+    <dt>Guardrails</dt><dd>Constraints that limit what an agent may do &mdash; important because an agent&rsquo;s mistake is a performed <em>action</em>, not just a wrong sentence.</dd>
+  </dl>
+
+  <h3>Research-specific</h3>
+  <dl class="gloss">
+    <dt>Grounded search tool</dt><dd>A research tool (Elicit, Consensus, Scite, Semantic Scholar) that answers from a database of <em>real</em> indexed papers, so citations correspond to actual sources &mdash; far safer than a chatbot&rsquo;s memory.</dd>
+    <dt>Smart citations (Scite)</dt><dd>Citation data showing whether later papers <em>support, mention, or contrast</em> a finding &mdash; useful for checking whether a result held up.</dd>
+    <dt>Citation network</dt><dd>The web of which papers cite which; tools like ResearchRabbit map it visually to reveal a subfield.</dd>
+    <dt>Reference manager</dt><dd>Software (e.g., Zotero) that stores papers and generates formatted citations. Because it holds only papers you actually added, it&rsquo;s a natural gatekeeper against fake references.</dd>
+    <dt>Systematic review</dt><dd>A structured, comprehensive literature review with explicit search and screening criteria; several AI tools now assist the screening/extraction steps.</dd>
+    <dt>NotebookLM</dt><dd>Google&rsquo;s free tool that answers strictly from sources you upload, citing each claim &mdash; strong for close-reading a fixed set of papers.</dd>
+  </dl>
+
+  <h3>Safety, ethics &amp; limitations</h3>
+  <dl class="gloss">
+    <dt>Hallucination</dt><dd>When a model produces confident, fluent output that is false &mdash; invented facts, fake citations, wrong numbers. A structural property of how LLMs work, not an occasional bug: always verify.</dd>
+    <dt>Confabulation</dt><dd>Another word for hallucination, borrowed from the neuroscience/psychology sense of filling gaps with plausible fabrication.</dd>
+    <dt>Bias</dt><dd>Systematic skew in outputs reflecting biases in training data &mdash; relevant to fairness and to scientific interpretation.</dd>
+    <dt>Sycophancy</dt><dd>A model&rsquo;s tendency to agree with the user or tell them what they want to hear &mdash; dangerous when you ask leading analytical or statistical questions.</dd>
+    <dt>Data privacy / retention</dt><dd>Whether and how a service stores or trains on your inputs. Check settings before pasting unpublished or sensitive data; know your account&rsquo;s controls.</dd>
+    <dt>Disclosure</dt><dd>Stating how AI was used in a manuscript or grant, as journals and funders increasingly require.</dd>
+    <dt>Research integrity</dt><dd>Honesty and rigor in research. With AI this means: verify every fact and citation, never fabricate data or imagery, and follow authorship, disclosure, and peer-review rules.</dd>
+    <dt>Reproducibility</dt><dd>Whether others can repeat your work and get the same result. Document AI-assisted analysis steps so they can be re-run and checked.</dd>
+    <dt>Open weights / open source</dt><dd>Models whose parameters are publicly released (e.g., some Llama, Mistral models), which can run locally &mdash; relevant when data can&rsquo;t leave your machine.</dd>
+    <dt>AGI (artificial general intelligence)</dt><dd>A hypothetical AI with broad, human-level competence across most tasks. Today&rsquo;s systems are narrow by comparison; the term is used loosely &mdash; treat bold claims skeptically.</dd>
+  </dl>
+</div>
+<!-- ===================== SECTION 7 ===================== -->
+<div class="section" id="s7">
+  <div class="section-head">
+    <div class="kicker">Section 7 &middot; Deliverable 3a</div>
+    <h2>Resources used in this plan</h2>
+    <hr class="rule">
+  </div>
+  <p class="lead">Every resource the plan actually assigns, grouped by phase, each checked live in July 2026. Costs are the individual/academic rate where one exists. See Section 10 for verification caveats.</p>
+
+  <h3>Foundations &mdash; what AI &amp; LLMs are (Phase 1)</h3>
+  <table class="tight">
+    <tr><th>Resource</th><th>Format</th><th>Cost</th><th>Link</th></tr>
+    <tr><td>3Blue1Brown &mdash; Neural Networks series (incl. &ldquo;But what is a neural network?&rdquo;, &ldquo;LLMs explained briefly&rdquo;, transformers &amp; attention)</td><td>Video</td><td><span class="pill free">Free</span></td><td>youtube.com/watch?v=aircAruvnKk &middot; 3blue1brown.com/topics/neural-networks</td></tr>
+    <tr><td>Karpathy &mdash; &ldquo;[1hr Talk] Intro to Large Language Models&rdquo;</td><td>Video ~1h</td><td><span class="pill free">Free</span></td><td>youtube.com/watch?v=zjkBMFhNj_g</td></tr>
+    <tr><td>Karpathy &mdash; &ldquo;Deep Dive into LLMs like ChatGPT&rdquo; (reference/deep)</td><td>Video 3.5h</td><td><span class="pill free">Free</span></td><td>youtube.com/watch?v=7xTGNNLPyMI</td></tr>
+    <tr><td>Lee &amp; Trott &mdash; &ldquo;Large language models, explained with a minimum of math and jargon&rdquo;</td><td>Article</td><td><span class="pill free">Free</span></td><td>understandingai.org/p/large-language-models-explained-with</td></tr>
+    <tr><td>Elements of AI &mdash; &ldquo;Introduction to AI&rdquo;</td><td>Course ~25h</td><td><span class="pill free">Free</span></td><td>elementsofai.com</td></tr>
+    <tr><td>DeepLearning.AI &mdash; &ldquo;Generative AI for Everyone&rdquo; (Andrew Ng)</td><td>Course ~6h</td><td><span class="pill free">Free audit</span></td><td>deeplearning.ai/courses/generative-ai-for-everyone</td></tr>
+    <tr><td>Ethan Mollick &mdash; <em>Co-Intelligence</em> (also used in Phase 8)</td><td>Book</td><td><span class="pill paid">~$18</span></td><td>penguinrandomhouse.com/books/741805</td></tr>
+  </table>
+
+  <h3>Claude fluency &amp; prompting (Phase 2)</h3>
+  <table class="tight">
+    <tr><th>Resource</th><th>Format</th><th>Cost</th><th>Link</th></tr>
+    <tr><td>Anthropic &mdash; Prompt Engineering Interactive Tutorial</td><td>Course (GitHub)</td><td><span class="pill free">Free</span></td><td>github.com/anthropics/courses</td></tr>
+    <tr><td>Anthropic Academy &mdash; courses catalog (prompting, Claude, Claude Code)</td><td>Courses</td><td><span class="pill free">Free</span></td><td>anthropic.skilljar.com &middot; anthropic.com/learn</td></tr>
+    <tr><td>Anthropic &mdash; Prompt engineering docs</td><td>Docs</td><td><span class="pill free">Free</span></td><td>platform.claude.com/docs</td></tr>
+    <tr><td>Karpathy &mdash; &ldquo;How I Use LLMs&rdquo;</td><td>Video 2h</td><td><span class="pill free">Free</span></td><td>youtube.com/watch?v=EWvNQjAaOHw</td></tr>
+  </table>
+
+  <h3>Literature review &amp; synthesis (Phase 3)</h3>
+  <table class="tight">
+    <tr><th>Tool / resource</th><th>Role</th><th>Cost</th><th>Link</th></tr>
+    <tr><td>Zotero</td><td>Reference manager &amp; citation gatekeeper</td><td><span class="pill free">Free</span></td><td>zotero.org</td></tr>
+    <tr><td>Semantic Scholar</td><td>Free search backbone, TLDRs, alerts</td><td><span class="pill free">Free</span></td><td>semanticscholar.org</td></tr>
+    <tr><td>ResearchRabbit</td><td>Citation-network mapping; Zotero sync</td><td><span class="pill free">Free</span></td><td>researchrabbit.ai</td></tr>
+    <tr><td>Elicit</td><td>Evidence tables from real papers</td><td><span class="pill opt">Free / ~$12/mo</span></td><td>elicit.com</td></tr>
+    <tr><td>Consensus</td><td>Citation-backed yes/no claim checks</td><td><span class="pill opt">Free / ~$10/mo</span></td><td>consensus.app</td></tr>
+    <tr><td>Scite</td><td>Supporting vs contrasting citations</td><td><span class="pill opt">Library / ~$12/mo</span></td><td>scite.ai</td></tr>
+    <tr><td>NotebookLM</td><td>Grounded close-reading + audio overviews</td><td><span class="pill free">Free</span></td><td>notebooklm.google</td></tr>
+    <tr><td>Retraction Watch (+ database)</td><td>Screen references for retractions</td><td><span class="pill free">Free</span></td><td>retractionwatch.com</td></tr>
+    <tr><td>Tutorials: Elicit systematic-review guide/videos; NotebookLM lit-review guide; ResearchRabbit library guide</td><td>Tutorials</td><td><span class="pill free">Free</span></td><td>elicit.com/blog/systematic-review &middot; youtube.com/watch?v=U1l1XzxWRoY</td></tr>
+  </table>
+
+  <h3>Data analysis without coding (Phase 4)</h3>
+  <table class="tight">
+    <tr><th>Resource</th><th>Format</th><th>Cost</th><th>Link</th></tr>
+    <tr><td>Anthropic &mdash; &ldquo;Use Claude for Excel&rdquo;</td><td>Official guide</td><td>In Pro</td><td>support.claude.com/en/articles/12650343</td></tr>
+    <tr><td>OpenAI &mdash; &ldquo;Data analysis with ChatGPT&rdquo; (optional reference)</td><td>Official doc</td><td>Feature ~$20/mo</td><td>help.openai.com/en/articles/8437071</td></tr>
+    <tr><td>Coupler.io &mdash; &ldquo;Use Claude.ai for Data Analytics (Safely)&rdquo;</td><td>Article</td><td><span class="pill free">Free</span></td><td>blog.coupler.io/how-to-use-claude-ai-for-data-analytics</td></tr>
+    <tr><td>VelvetShark &mdash; &ldquo;Data analysis with Claude Code&rdquo; (large files)</td><td>Article</td><td><span class="pill free">Free</span></td><td>velvetshark.com/data-analysis-with-claude-code</td></tr>
+  </table>
+
+  <h3>Scientific writing &amp; research integrity (Phase 5)</h3>
+  <table class="tight">
+    <tr><th>Resource</th><th>Type</th><th>Cost</th><th>Link</th></tr>
+    <tr><td>ICMJE Recommendations (AI, authorship, disclosure, peer review)</td><td>Policy</td><td><span class="pill free">Free</span></td><td>icmje.org/recommendations</td></tr>
+    <tr><td>NIH &mdash; Generative AI prohibited in peer review (NOT-OD-23-149)</td><td>Policy</td><td><span class="pill free">Free</span></td><td>grants.nih.gov/grants/guide/notice-files/NOT-OD-23-149.html</td></tr>
+    <tr><td>NIH &mdash; &ldquo;Apply Responsibly&rdquo; AI-in-applications policy (2025)</td><td>Policy</td><td><span class="pill free">Free</span></td><td>grants.nih.gov (Extramural Nexus, July 2025)</td></tr>
+    <tr><td>ACS Nano &mdash; &ldquo;Best Practices for Using AI When Writing Scientific Manuscripts&rdquo;</td><td>Editorial</td><td><span class="pill free">Free</span></td><td>pubs.acs.org/doi/10.1021/acsnano.3c01544</td></tr>
+    <tr><td>MDPI &mdash; &ldquo;Good Practices for Scientific Article Writing with&hellip; AI&rdquo;</td><td>Article</td><td><span class="pill free">Free</span></td><td>mdpi.com/2673-687X/3/2/9</td></tr>
+  </table>
+
+  <h3>Figures, slides &amp; media (Phase 6)</h3>
+  <table class="tight">
+    <tr><th>Tool / resource</th><th>Use</th><th>Cost</th><th>Link</th></tr>
+    <tr><td>BioRender (+ Learning Hub)</td><td>Scientific figures &amp; schematics</td><td><span class="pill opt">~$35/mo academic</span></td><td>biorender.com &middot; biorender.com/learn</td></tr>
+    <tr><td>draw.io / Excalidraw</td><td>Free flowcharts &amp; sketches</td><td><span class="pill free">Free</span></td><td>drawio.com &middot; excalidraw.com</td></tr>
+    <tr><td>Google Gemini (image generation)</td><td>Concept/slide graphics</td><td><span class="pill free">Free tier</span></td><td>gemini.google.com</td></tr>
+    <tr><td>Gamma (+ tutorial)</td><td>AI slide decks</td><td><span class="pill opt">Free / ~$8&ndash;10/mo</span></td><td>gamma.app</td></tr>
+    <tr><td>Canva (+ Canva&ndash;Claude MCP connector)</td><td>Posters, slides, design</td><td><span class="pill free">Free / Education</span></td><td>canva.com &middot; canva.com/help/mcp-agent-setup</td></tr>
+  </table>
+
+  <h3>Claude Code, agents &amp; connectors (Phase 7)</h3>
+  <table class="tight">
+    <tr><th>Resource</th><th>Level</th><th>Cost</th><th>Link</th></tr>
+    <tr><td>Anthropic &mdash; Terminal guide for new users</td><td>Absolute beginner</td><td><span class="pill free">Free</span></td><td>code.claude.com/docs/en/terminal-guide</td></tr>
+    <tr><td>MDN &mdash; Command line crash course (§1&ndash;3)</td><td>Beginner</td><td><span class="pill free">Free</span></td><td>developer.mozilla.org &rarr; Command line</td></tr>
+    <tr><td>IBM Technology &mdash; &ldquo;What are AI Agents?&rdquo;</td><td>Beginner video</td><td><span class="pill free">Free</span></td><td>youtube.com/watch?v=F8NKVhkZZWI</td></tr>
+    <tr><td>explainX &mdash; &ldquo;What Are AI Agents? A Plain-English Beginner&rsquo;s Guide (2026)&rdquo;</td><td>Beginner</td><td><span class="pill free">Free</span></td><td>explainx.ai/blog/what-are-ai-agents-complete-beginners-guide-2026</td></tr>
+    <tr><td>Anthropic &mdash; Claude Code Quickstart</td><td>Beginner</td><td><span class="pill free">Free</span></td><td>code.claude.com/docs/en/quickstart</td></tr>
+    <tr><td>Anthropic Academy &mdash; &ldquo;Claude Code 101&rdquo; &rarr; &ldquo;Claude Code in Action&rdquo;</td><td>Beginner&rarr;Int.</td><td><span class="pill free">Free</span></td><td>anthropic.skilljar.com &middot; coursera.org/learn/claude-code-in-action</td></tr>
+    <tr><td>CC for Everyone &mdash; &ldquo;Claude Code for Non-Developers&rdquo;</td><td>Non-coder</td><td><span class="pill free">Free</span></td><td>ccforeveryone.com/guides/claude-code-for-non-developers</td></tr>
+    <tr><td>CC for Everyone &mdash; &ldquo;Claude Code for Researchers&rdquo;</td><td>Non-coder</td><td><span class="pill free">Free</span></td><td>ccforeveryone.com/guides/claude-code-for-researchers</td></tr>
+    <tr><td>Anthropic &mdash; &ldquo;Introducing MCP&rdquo; &amp; the MCP intro docs</td><td>Beginner&rarr;Int.</td><td><span class="pill free">Free</span></td><td>anthropic.com/news/model-context-protocol &middot; modelcontextprotocol.io</td></tr>
+    <tr><td>Anthropic &mdash; &ldquo;Building effective agents&rdquo; (reference only; developer-level)</td><td>Advanced</td><td><span class="pill free">Free</span></td><td>anthropic.com/engineering/building-effective-agents</td></tr>
+  </table>
+
+  <h3>Integration, judgment &amp; responsible use (Phase 8)</h3>
+  <table class="tight">
+    <tr><th>Resource</th><th>Type</th><th>Cost</th><th>Link</th></tr>
+    <tr><td>Ethan Mollick &mdash; <em>Co-Intelligence</em></td><td>Book</td><td><span class="pill paid">~$18</span></td><td>penguinrandomhouse.com/books/741805</td></tr>
+    <tr><td>MIT Sloan &mdash; &ldquo;When AI Gets It Wrong: Hallucinations &amp; Bias&rdquo;</td><td>Article</td><td><span class="pill free">Free</span></td><td>mitsloanedtech.mit.edu/ai/basics/addressing-ai-hallucinations-and-bias</td></tr>
+    <tr><td>Narayanan &amp; Kapoor &mdash; AI Snake Oil / &ldquo;AI as Normal Technology&rdquo;</td><td>Book + essays</td><td><span class="pill free">Free essays</span></td><td>normaltech.ai</td></tr>
+  </table>
+</div>
+<!-- ===================== SECTION 8 ===================== -->
+<div class="section" id="s8">
+  <div class="section-head">
+    <div class="kicker">Section 8 &middot; Deliverable 3b</div>
+    <h2>If he has extra time</h2>
+    <hr class="rule">
+  </div>
+  <p class="lead">Optional depth &mdash; genuinely good resources that would over-stuff a 1-hour-a-day plan, but reward extra curiosity. Not required to reach the end state.</p>
+
+  <h3>Deeper on fundamentals &amp; prompting</h3>
+  <ul>
+    <li><strong>Karpathy &mdash; &ldquo;Deep Dive into LLMs like ChatGPT&rdquo;</strong> (3.5h video) &mdash; the complete training-stack reference if Phase 1 leaves him wanting more. <span class="src">youtube.com/watch?v=7xTGNNLPyMI</span></li>
+    <li><strong>DeepLearning.AI &mdash; &ldquo;ChatGPT Prompt Engineering for Developers&rdquo;</strong> (~1.5h, free) &mdash; hands-on prompting; assumes a little Python, so optional for a non-coder. <span class="src">deeplearning.ai/short-courses</span></li>
+    <li><strong>Anthropic Courses on GitHub</strong> (API fundamentals, tool use, evaluations) &mdash; code-heavy; for if he ever wants to peek under the hood. <span class="src">github.com/anthropics/courses &amp; /anthropic-cookbook</span></li>
+  </ul>
+
+  <h3>More literature-review firepower</h3>
+  <ul>
+    <li><strong>Undermind</strong> &mdash; agentic &ldquo;deep&rdquo; literature search with near-exhaustive recall on narrow mechanistic questions; worth it during an intensive systematic-review push. <span class="src">undermind.ai &mdash; confirm current price at signup</span></li>
+    <li><strong>SciSpace</strong> &mdash; all-in-one chat-with-PDF + formatting; check for a free university license. <span class="src">scispace.com</span></li>
+    <li><strong>Perplexity (student ~$10/mo)</strong> &mdash; fast web-grounded orientation and background; always click through to sources (it searches the open web, not just papers). <span class="src">perplexity.ai/students</span></li>
+    <li><strong>Zotero AI plugins</strong> &mdash; PapersGPT (chat-with-PDF in your library; supports free local models), Aria, Beaver. <span class="src">papersgpt.com</span></li>
+  </ul>
+
+  <h3>More image / media tools</h3>
+  <ul>
+    <li><strong>Ideogram</strong> (best text-in-image, free tier) for poster titles/labels; <strong>Adobe Firefly</strong> (commercially-safe training data) when licensing matters; <strong>Midjourney</strong> for top-tier aesthetics (paid, overkill for most needs). <span class="src">ideogram.ai &middot; adobe.com/products/firefly.html</span></li>
+    <li><strong>AI video (free tiers):</strong> Google Veo via Gemini; Kling and Pika for cheap experimentation; Runway/HeyGen only if a specific project demands it. Video is a nice-to-have, not core. <span class="src">gemini.google.com &middot; pika.art &middot; runwayml.com</span></li>
+  </ul>
+
+  <h3>Worth checking with the institution</h3>
+  <ul>
+    <li><strong>Claude for Education</strong> &mdash; if Vanderbilt participates, it could make paid Claude access free. <strong>Scite</strong> and <strong>Microsoft 365 Copilot</strong> may also be library/IT-provided. Five minutes could save real money.</li>
+  </ul>
+</div>
+
+<!-- ===================== SECTION 9 ===================== -->
+<div class="section" id="s9">
+  <div class="section-head">
+    <div class="kicker">Section 9 &middot; Deliverable 4</div>
+    <h2>Continuing education &mdash; the keep-current habit</h2>
+    <hr class="rule">
+  </div>
+  <p class="lead">This field moves monthly; staying current is a <em>light</em> habit, not a second job. The list is deliberately ruthless: <strong>two podcasts and two newsletters</strong> is the whole recommendation. Everything else is noise for a busy scientist.</p>
+
+  <h3>Podcasts &mdash; pick 2</h3>
+  <table class="tight">
+    <tr><th>Show</th><th>Why it&rsquo;s the pick</th><th>Cadence</th><th>Link</th></tr>
+    <tr><td><strong>Hard Fork</strong> (NYT)</td><td>#1 pick. Weekly, journalistic, entertaining, jargon-free &mdash; the best &ldquo;keep up without drowning&rdquo; show for a non-coder.</td><td>Weekly</td><td><span class="src">nytimes.com/column/hard-fork</span></td></tr>
+    <tr><td><strong>Google DeepMind: The Podcast</strong> (Hannah Fry)</td><td>Best science fit. A mathematician interviewing researchers on AI in science, health, and biology &mdash; matches his domain and level.</td><td>Fortnightly (by season)</td><td><span class="src">deepmind.google/the-podcast</span></td></tr>
+    <tr><td><em>Optional 3rd:</em> The AI Daily Brief</td><td>~20-min daily current-events drip if he wants more &mdash; easy to skip when the hour is tight.</td><td>Daily</td><td><span class="src">Apple/Spotify: &ldquo;The AI Daily Brief&rdquo;</span></td></tr>
+  </table>
+  <p class="src">Cut for fit: Latent Space &amp; Practical AI (too engineering-focused), Dwarkesh (superb but long/dense &mdash; a &ldquo;graduate&rdquo; option later), No Priors (VC framing), Lenny&rsquo;s (product management). Watch for Latent Space&rsquo;s spun-off &ldquo;AI for Science&rdquo; show &mdash; promising domain fit, not yet verified for cadence.</p>
+
+  <h3>Newsletters &mdash; pick 2&ndash;3 (all free)</h3>
+  <table class="tight">
+    <tr><th>Newsletter</th><th>Why it&rsquo;s the pick</th><th>Link</th></tr>
+    <tr><td><strong>One Useful Thing</strong> (Ethan Mollick)</td><td>#1 pick. Practical, non-technical, experiment-driven &mdash; the best ongoing &ldquo;how do I actually use this&rdquo; source.</td><td><span class="src">oneusefulthing.org</span></td></tr>
+    <tr><td><strong>The Batch</strong> (DeepLearning.AI)</td><td>Weekly, well-curated by Andrew Ng&rsquo;s team &mdash; balanced signal without hype.</td><td><span class="src">deeplearning.ai/the-batch</span></td></tr>
+    <tr><td><strong>AI as Normal Technology</strong> (AI Snake Oil)</td><td>The skeptical, research-integrity voice &mdash; occasional deep reads, not weekly. The right counterweight for a scientist.</td><td><span class="src">normaltech.ai</span></td></tr>
+  </table>
+  <p class="src">Optional level-ups: Simon Willison&rsquo;s weblog (excellent, developer-leaning) and Import AI by Jack Clark (research-dense). Skip TLDR AI &mdash; high-volume, tooling-heavy.</p>
+
+  <h3>YouTube &mdash; optional, pick at most 2</h3>
+  <ul>
+    <li><strong>Google DeepMind</strong> &mdash; research explainers + video podcast, on-domain. <span class="src">youtube.com/@Google_DeepMind</span></li>
+    <li><strong>AI Explained</strong> &mdash; clear, analytical, non-hype breakdowns of why a model or trend matters. <span class="src">youtube.com/@aiexplained-official</span></li>
+    <li><em>Alternative:</em> <strong>Two Minute Papers</strong> for short, upbeat research summaries.</li>
+  </ul>
+
+  <div class="box good">
+    <div class="box-t">The habit, concretely</div>
+    <p style="margin:0">One podcast on the commute/at the bench, one newsletter over coffee each week. That&rsquo;s it. If a tool or model he uses ships a major update, spend one session trying it on real work &mdash; hands-on beats reading about it.</p>
+  </div>
+</div>
+
+<!-- ===================== SECTION 10 ===================== -->
+<div class="section" id="s10">
+  <div class="section-head">
+    <div class="kicker">Section 10</div>
+    <h2>Verification notes &amp; caveats</h2>
+    <hr class="rule">
+  </div>
+  <p class="lead">Honesty about sourcing. This plan was researched by parallel specialist passes, each required to confirm links resolve and content matches before inclusion. Here&rsquo;s what was solid and what to re-check.</p>
+
+  <h3>Method</h3>
+  <p>Six research streams (Anthropic ecosystem; AI/LLM fundamentals; literature tools; Claude Code for non-coders; image/video/figure tools; writing/productivity/continuing-ed) were run and cross-checked against the live web on 8&ndash;9 July 2026. Two official Anthropic documentation pages were loaded in full; most other pages were confirmed via search results returning the page&rsquo;s own current text. Nothing dead, dormant, or unverifiable was knowingly included.</p>
+
+  <h3>Known limitations &mdash; re-check these before relying on a number</h3>
+  <ul>
+    <li><strong>Vendor bot-blocking.</strong> Several sites (anthropic.com, claude.com, YouTube, BioRender, Canva, some Substacks) return errors to automated fetchers. Their facts here are corroborated from official-page search snippets plus independent sources &mdash; open normally to confirm the exact figure.</li>
+    <li><strong>Consumer-AI pricing shifts monthly.</strong> All prices are July-2026 rates; confirm at signup, ideally with a .edu email for academic discounts (Elicit, Consensus, BioRender, Perplexity, Scite all offer them &mdash; exact post-discount numbers vary).</li>
+    <li><strong>Claude plan &rarr; model mapping.</strong> Which specific model each tier includes changes as Anthropic ships; the safe statement is &ldquo;Pro/Max include the current Opus/Sonnet/Haiku families.&rdquo;</li>
+    <li><strong>Claude Science workbench.</strong> Details (macOS/Linux beta, plan availability, any academic-lab discount) came from announcement snippets, not a loaded page. It isn&rsquo;t needed for this plan regardless.</li>
+    <li><strong>Undermind pricing</strong> and the <strong>Latent Space &ldquo;AI for Science&rdquo; podcast</strong> were flagged by research as not fully verifiable &mdash; both are optional (Section 8/9), so this doesn&rsquo;t affect the core path.</li>
+    <li><strong>NIH / ICMJE policy is living guidance.</strong> Always check the current version before a specific submission &mdash; funder and journal AI rules are still evolving.</li>
+  </ul>
+
+  <div class="box warn">
+    <div class="box-t">Two things that don&rsquo;t change</div>
+    <p style="margin:0">Whatever the prices do: (1) <strong>never let any chatbot invent a citation</strong> &mdash; verify every reference against a real source; and (2) <strong>never generate imagery that could pass as experimental data.</strong> These are the load-bearing integrity rules of the entire plan.</p>
+  </div>
+</div>
+
+<!-- ===================== APPENDIX ===================== -->
+<div class="section" id="s11">
+  <div class="section-head">
+    <div class="kicker">Appendix A</div>
+    <h2>First-week checklist &amp; starter prompts</h2>
+    <hr class="rule">
+  </div>
+
+  <h3>Week-one setup checklist</h3>
+  <ul class="check">
+    <li>Subscribe to <strong>Claude Pro</strong>; install the desktop app; open claude.ai.</li>
+    <li>Review privacy/memory/training settings and set them to your comfort.</li>
+    <li>Confirm you have a <strong>Google account</strong> (for NotebookLM &amp; Gemini later).</li>
+    <li>Create your <strong>AI Lab Notebook</strong> (one doc for prompts, wins, and errors).</li>
+    <li>Bookmark <strong>Anthropic Academy</strong> and the Section 9 podcast + newsletter.</li>
+    <li>Ask your library/IT whether Vanderbilt provides <strong>Claude for Education</strong> or Scite access.</li>
+    <li>Do the first useful chat (below) on a paper you&rsquo;re actually reading.</li>
+  </ul>
+
+  <h3>Starter prompts (copy, then adapt &mdash; wet-lab flavored)</h3>
+  <div class="box ink">
+    <div class="box-t">Understand a paper</div>
+    <p style="margin:0"><em>&ldquo;I&rsquo;m a neuroscience PhD student. Here is a paper&rsquo;s abstract [paste]. Explain its central finding in 4 sentences, define any specialized terms, list the main method used, and give two questions a critical reviewer would raise. Don&rsquo;t speculate beyond the text.&rdquo;</em></p>
+  </div>
+  <div class="box ink">
+    <div class="box-t">Set up your thesis Project (custom instructions)</div>
+    <p style="margin:0"><em>&ldquo;You are assisting a Vanderbilt MD/PhD student doing basic-science neuroscience in a wet lab studying [system/technique]. Prefer precise, cautious, citable answers. When I ask about literature, only use sources I provide &mdash; never invent citations. Flag uncertainty explicitly.&rdquo;</em></p>
+  </div>
+  <div class="box ink">
+    <div class="box-t">Synthesize papers you uploaded (grounded)</div>
+    <p style="margin:0"><em>&ldquo;Using only the PDFs in this Project, summarize what is known about [topic]. Group by theme, note where papers agree or disagree, and cite the specific source for every claim. List open questions. If something isn&rsquo;t in these papers, say so rather than guessing.&rdquo;</em></p>
+  </div>
+  <div class="box ink">
+    <div class="box-t">Analyze a dataset (with pushback built in)</div>
+    <p style="margin:0"><em>&ldquo;Here is a CSV [upload]. Describe its structure and any data-quality issues. Propose a cleaning plan and wait for my approval. Then recommend an appropriate statistical test, state the assumptions it requires, and check whether my data meet them &mdash; tell me if it&rsquo;s the wrong test rather than just running it.&rdquo;</em></p>
+  </div>
+  <div class="box ink">
+    <div class="box-t">Edit your writing (your words, your claims)</div>
+    <p style="margin:0"><em>&ldquo;This is a paragraph I wrote for a manuscript [paste]. Improve clarity, flow, and concision without changing my meaning or adding any claims or citations. Keep my voice. Then, separately, tell me where a study-section reviewer would push back.&rdquo;</em></p>
+  </div>
+
+  <div class="footer-note">
+    Prepared as a personalized mentorship plan for Ezechukwu Nduka &middot; July 2026. Anchored on Anthropic&rsquo;s Claude, with best-in-class non-Anthropic tools where they win. All resources verified against the live web at time of writing; confirm prices and policies at point of use. The two integrity rules &mdash; verify every citation, never fabricate data imagery &mdash; are non-negotiable.
+  </div>
+</div>
+
+</body>
+</html>
