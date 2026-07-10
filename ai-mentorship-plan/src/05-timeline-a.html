@@ -5,33 +5,33 @@
     <h2>The phased timeline</h2>
     <hr class="rule">
   </div>
-  <p class="lead">Nine phases over ~26 weeks. Each lists its objectives, a short verified resource set, a mandatory hands-on exercise on your own lab material, and the milestone that closes it. Every resource name is a live link; costs are consolidated in Section 7.</p>
+  <p class="lead">Nine phases run over about 26 weeks. Each lists its objectives, a short verified resource set, a required hands-on exercise on your own lab material, and the milestone that closes it. Every resource name is a live link, and costs are consolidated in Section 7.</p>
   <div class="box ink">
     <div class="box-t">How to read each phase</div>
-    <p style="margin:0"><strong>Learn</strong> = the ~20-minute inputs. <strong>Do</strong> = the ~40-minute practice, always on real work. <strong>Milestone</strong> = the artifact you produce and self-score (Section 5) before advancing. Resource names in <strong>bold</strong> are clickable and also detailed in Section 7.</p>
+    <p style="margin:0"><strong>Learn</strong> is the roughly 20-minute inputs. <strong>Do</strong> is the roughly 40-minute practice, always on real work. <strong>Milestone</strong> is the artifact you produce and self-score (Section 5) before advancing. Resource names in bold are clickable and are also detailed in Section 7.</p>
   </div>
 </div>
 
 <!-- PHASE 0 -->
 <div class="section" id="s4p0">
   <div class="section-head">
-    <span class="phase-tag">Phase 0</span> &nbsp;<span class="wk">WEEK 1 (PART) &middot; 2&ndash;3 HRS &middot; DOMAINS D3, D9</span>
+    <span class="phase-tag">Phase 0</span> &nbsp;<span class="wk">WEEK 1 (PART) &middot; 2-3 HRS &middot; DOMAINS D3, D9</span>
     <h2 style="margin-top:8px">Setup &amp; first contact</h2>
   </div>
-  <p>The goal of this short phase is zero friction: accounts live, tools installed, and one genuinely useful interaction &mdash; so momentum starts on day one. No terminal, no coding.</p>
+  <p>The goal of this short phase is zero friction: accounts live, tools installed, and one genuinely useful interaction, so momentum starts on day one. No terminal, no coding.</p>
 
   <h4>Do</h4>
   <ul>
-    <li>Create/upgrade to <strong><a href="https://www.anthropic.com/pricing">Claude Pro</a></strong> ($20/mo). Install the <strong><a href="https://claude.ai/download">Claude desktop app</a></strong> (Mac or Windows) and try <strong><a href="https://claude.ai">claude.ai</a></strong> in the browser &mdash; no command line involved.</li>
-    <li>In account settings, review privacy/memory/training controls and set them to your comfort (see data-hygiene box, Section 1).</li>
-    <li>Make sure you have a <strong>Google account</strong> (for the free NotebookLM and Gemini used later).</li>
-    <li>Start your <strong>AI Lab Notebook</strong> (a single Google Doc or Claude Project) &mdash; every session&rsquo;s notes go here.</li>
+    <li>Create or upgrade to <strong><a href="https://www.anthropic.com/pricing">Claude Pro</a></strong> ($20/mo). Install the <strong><a href="https://claude.ai/download">Claude desktop app</a></strong> (Mac or Windows) and try <strong><a href="https://claude.ai">claude.ai</a></strong> in the browser, with no command line involved.</li>
+    <li>In account settings, review the privacy, memory, and training controls and set them to your comfort (see the data-hygiene box, Section 1).</li>
+    <li>Make sure you have a Google account (for the free NotebookLM and Gemini used later).</li>
+    <li>Start your AI Lab Notebook (a single Google Doc or Claude Project). Every session&rsquo;s notes go here.</li>
     <li><strong>First useful chat:</strong> paste the abstract of a paper you&rsquo;re currently reading and ask Claude to explain the key finding, define three unfamiliar terms, and list two questions a skeptical reviewer would ask.</li>
   </ul>
 
   <h4>Learn (light)</h4>
   <ul>
-    <li>Skim the <strong><a href="https://anthropic.skilljar.com/">Anthropic Academy</a></strong> catalog and bookmark it &mdash; free official courses you&rsquo;ll use in Phases 2 and 7.</li>
+    <li>Skim the <strong><a href="https://anthropic.skilljar.com/">Anthropic Academy</a></strong> catalog and bookmark it. These free official courses come back in Phases 2 and 7.</li>
   </ul>
 
   <div class="mile"><div class="mh">&#10022; Checkpoint 0</div>Accounts are live, the desktop app opens, and you&rsquo;ve had one chat that actually helped you understand a paper. Your AI Lab Notebook exists with its first entry.</div>
@@ -40,97 +40,97 @@
 <!-- PHASE 1 -->
 <div class="section" id="s4p1">
   <div class="section-head">
-    <span class="phase-tag">Phase 1</span> &nbsp;<span class="wk">WEEKS 1&ndash;3 &middot; 12&ndash;14 HRS &middot; DOMAINS D1, D9</span>
+    <span class="phase-tag">Phase 1</span> &nbsp;<span class="wk">WEEKS 1-3 &middot; 12-14 HRS &middot; DOMAINS D1, D9</span>
     <h2 style="margin-top:8px">Foundations: what AI &amp; LLMs really are</h2>
   </div>
-  <p>Before using the tools deeply, you&rsquo;ll build an honest mental model of what&rsquo;s under the hood. As a neuroscientist you&rsquo;ll find the neural-network framing intuitive &mdash; and understanding <em>why</em> these systems hallucinate is what makes you a safe, critical user forever after.</p>
+  <p>Before using the tools deeply, you&rsquo;ll build an honest mental model of what&rsquo;s under the hood. As a neuroscientist you&rsquo;ll find the neural-network framing intuitive, and understanding why these systems hallucinate is what makes you a safe, critical user afterward.</p>
 
   <h4>Objectives</h4>
-  <p>Explain AI vs ML vs deep learning; what a neural network and an LLM are; pretraining, fine-tuning, and RLHF; tokens, context windows, embeddings, parameters; and the mechanistic reason hallucinations happen.</p>
+  <p>Explain AI versus ML versus deep learning; what a neural network and an LLM are; pretraining, fine-tuning, and RLHF; tokens, context windows, embeddings, and parameters; and the mechanistic reason hallucinations happen.</p>
 
   <h4>Learn (chunk the long videos across sessions)</h4>
   <ul>
-    <li><strong><a href="https://www.3blue1brown.com/topics/neural-networks">3Blue1Brown</a></strong> &mdash; &ldquo;<a href="https://www.youtube.com/watch?v=aircAruvnKk">But what is a neural network?</a>&rdquo; (Ch.1, ~19 min) and the short &ldquo;<a href="https://www.youtube.com/watch?v=LPZh9BOjkQs">Large language models explained briefly</a>&rdquo; (~8 min). The best visual intuition anywhere; watch the transformer &amp; attention chapters (Ch.5&ndash;6) later in the phase.</li>
-    <li><strong><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g">Andrej Karpathy &mdash; &ldquo;[1hr Talk] Intro to Large Language Models&rdquo;</a></strong> (~1 hr, split over 2&ndash;3 sessions). The single best conceptual map of training and the &ldquo;LLM as OS/agent&rdquo; idea.</li>
-    <li><strong><a href="https://www.understandingai.org/p/large-language-models-explained-with">Tim Lee &amp; Sean Trott &mdash; &ldquo;Large language models, explained with a minimum of math and jargon&rdquo;</a></strong> (long read). A cognitive scientist co-authored it, so the framing lands well for a neuroscientist &mdash; embeddings, transformers, training.</li>
-    <li><strong>Structured anchor (pick one, run through the phase):</strong> <strong><a href="https://www.elementsofai.com">Elements of AI</a></strong> (Helsinki, free) for a no-math &ldquo;what is AI&rdquo; spine, <em>or</em> <strong><a href="https://www.deeplearning.ai/courses/generative-ai-for-everyone/">Generative AI for Everyone</a></strong> (DeepLearning.AI, free audit) for the modern LLM-era version.</li>
+    <li><strong><a href="https://www.3blue1brown.com/topics/neural-networks">3Blue1Brown</a></strong>: &ldquo;<a href="https://www.youtube.com/watch?v=aircAruvnKk">But what is a neural network?</a>&rdquo; (Ch.1, ~19 min) and the short &ldquo;<a href="https://www.youtube.com/watch?v=LPZh9BOjkQs">Large language models explained briefly</a>&rdquo; (~8 min). A clear visual intuition for the ideas. Save the transformer and attention chapters (Ch.5-6) for later in the phase.</li>
+    <li><strong><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g">Andrej Karpathy: &ldquo;[1hr Talk] Intro to Large Language Models&rdquo;</a></strong> (~1 hr, split over 2-3 sessions). A strong conceptual map of training and the &ldquo;LLM as OS or agent&rdquo; idea.</li>
+    <li><strong><a href="https://www.understandingai.org/p/large-language-models-explained-with">Tim Lee &amp; Sean Trott: &ldquo;Large language models, explained with a minimum of math and jargon&rdquo;</a></strong> (long read). A cognitive scientist co-authored it, so the framing lands well for a neuroscientist: embeddings, transformers, training.</li>
+    <li><strong>Structured anchor (pick one and run it through the phase):</strong> <strong><a href="https://www.elementsofai.com">Elements of AI</a></strong> (Helsinki, free) for a no-math &ldquo;what is AI&rdquo; spine, or <strong><a href="https://www.deeplearning.ai/courses/generative-ai-for-everyone/">Generative AI for Everyone</a></strong> (DeepLearning.AI, free audit) for the modern LLM-era version.</li>
   </ul>
 
   <h4>Do</h4>
   <ul>
-    <li>After each video, write a 3-sentence explainer <em>in your own words</em> in your AI Lab Notebook. Teaching-back is the retention trick.</li>
-    <li>Ask Claude to quiz you on the day&rsquo;s concept, then to grade your answers and correct misconceptions.</li>
-    <li>Deliberately <strong>catch a hallucination</strong>: ask Claude for five references on a niche neuro topic, then check whether they exist (they may not). This lesson underwrites all of Phase 3.</li>
+    <li>After each video, write a 3-sentence explainer in your own words in your AI Lab Notebook. Teaching it back is the retention trick.</li>
+    <li>Ask Claude to quiz you on the day&rsquo;s concept, then to grade your answers and correct any misconceptions.</li>
+    <li>Deliberately catch a hallucination: ask Claude for five references on a niche neuro topic, then check whether they exist. They may not. This lesson underwrites all of Phase 3.</li>
   </ul>
 
-  <div class="mile"><div class="mh">&#10022; Milestone 1 &mdash; &ldquo;Explain an LLM&rdquo;</div>Record a <strong>5-minute talk</strong> (phone camera or slides) explaining to a labmate what an LLM is, how it&rsquo;s trained, and why it hallucinates &mdash; no notes. Self-score D1 on the rubric. <em>Local-expert tell:</em> you can field &ldquo;so is it just autocomplete?&rdquo; without hand-waving.</div>
+  <div class="mile"><div class="mh">&#10022; Milestone 1: &ldquo;Explain an LLM&rdquo;</div>Record a <strong>5-minute talk</strong> (phone camera or slides) explaining to a labmate what an LLM is, how it&rsquo;s trained, and why it hallucinates, all without notes. Self-score D1 on the rubric. Local-expert tell: you can field &ldquo;so is it just autocomplete?&rdquo; without hand-waving.</div>
 </div>
 
 <!-- PHASE 2 -->
 <div class="section" id="s4p2">
   <div class="section-head">
-    <span class="phase-tag">Phase 2</span> &nbsp;<span class="wk">WEEKS 4&ndash;5 &middot; 9&ndash;10 HRS &middot; DOMAINS D2, D3</span>
+    <span class="phase-tag">Phase 2</span> &nbsp;<span class="wk">WEEKS 4-5 &middot; 9-10 HRS &middot; DOMAINS D2, D3</span>
     <h2 style="margin-top:8px">Claude fluency &amp; prompting</h2>
   </div>
   <p>Now you turn the mental model into skill: getting consistently strong output, and setting up Claude to carry your research context. This is where the daily productivity gains begin.</p>
 
   <h4>Objectives</h4>
-  <p>Prompt deliberately (role, context, constraints, examples, structured output, iteration); use Projects, Artifacts, and Cowork; choose the right surface for a task; build a reusable prompt library.</p>
+  <p>Prompt deliberately (role, context, constraints, examples, structured output, iteration); use Projects, Artifacts, and Cowork; choose the right surface for a task; and build a reusable prompt library.</p>
 
   <h4>Learn</h4>
   <ul>
-    <li><strong><a href="https://github.com/anthropics/courses">Anthropic Prompt Engineering Interactive Tutorial</a></strong> (official, free) &mdash; work the concepts; as a non-coder you can skip the code cells and keep the prompting lessons.</li>
+    <li><strong><a href="https://github.com/anthropics/courses">Anthropic Prompt Engineering Interactive Tutorial</a></strong> (official, free). Work the concepts; as a non-coder you can skip the code cells and keep the prompting lessons.</li>
     <li><strong><a href="https://anthropic.skilljar.com/">Anthropic Academy</a></strong> prompting course (free, official) for a structured pass with a completion certificate.</li>
-    <li><strong><a href="https://www.youtube.com/watch?v=EWvNQjAaOHw">Andrej Karpathy &mdash; &ldquo;How I Use LLMs&rdquo;</a></strong> (practical companion; tool use, web search, thinking models) &mdash; chunk across sessions.</li>
+    <li><strong><a href="https://www.youtube.com/watch?v=EWvNQjAaOHw">Andrej Karpathy: &ldquo;How I Use LLMs&rdquo;</a></strong>, a practical companion covering tool use, web search, and thinking models. Chunk it across sessions.</li>
   </ul>
 
   <h4>Do (all on real lab work)</h4>
   <ul>
-    <li>Create a <strong>Claude Project</strong> for your thesis area: add custom instructions (your subfield, techniques, writing style) and upload 5&ndash;10 core papers and your lab&rsquo;s key protocols as project knowledge.</li>
-    <li>Start a <strong>prompt library</strong> in your AI Lab Notebook: reusable prompts for &ldquo;summarize this paper for my committee,&rdquo; &ldquo;critique this paragraph,&rdquo; &ldquo;turn these bullet points into methods prose,&rdquo; &ldquo;explain this technique to a rotation student.&rdquo;</li>
+    <li>Create a <strong>Claude Project</strong> for your thesis area: add custom instructions (your subfield, techniques, writing style) and upload 5-10 core papers and your lab&rsquo;s key protocols as project knowledge.</li>
+    <li>Start a <strong>prompt library</strong> in your AI Lab Notebook: reusable prompts for &ldquo;summarize this paper for my committee,&rdquo; &ldquo;critique this paragraph,&rdquo; &ldquo;turn these bullet points into methods prose,&rdquo; and &ldquo;explain this technique to a rotation student.&rdquo;</li>
     <li>Use an <strong>Artifact</strong> to build a comparison table of three methods you&rsquo;re choosing between.</li>
     <li>Try <strong>Cowork</strong> on a folder: point it at a set of PDFs and ask for a one-paragraph summary of each.</li>
   </ul>
 
-  <div class="mile"><div class="mh">&#10022; Milestone 2 &mdash; Thesis Project + prompt library</div>A working Claude Project loaded with your research context, plus <strong>10+ reusable prompts</strong> you actually use. Demonstrate by getting a genuinely useful, well-structured answer to a real research question in a single well-formed prompt. Self-score D2, D3.</div>
+  <div class="mile"><div class="mh">&#10022; Milestone 2: Thesis Project + prompt library</div>A working Claude Project loaded with your research context, plus <strong>10 or more reusable prompts</strong> you actually use. Demonstrate it by getting a genuinely useful, well-structured answer to a real research question in a single well-formed prompt. Self-score D2 and D3.</div>
 </div>
 
 <!-- PHASE 3 -->
 <div class="section" id="s4p3">
   <div class="section-head">
-    <span class="phase-tag">Phase 3</span> &nbsp;<span class="wk">WEEKS 6&ndash;9 &middot; 18&ndash;20 HRS &middot; DOMAINS D4, D9</span>
+    <span class="phase-tag">Phase 3</span> &nbsp;<span class="wk">WEEKS 6-9 &middot; 18-20 HRS &middot; DOMAINS D4, D9</span>
     <h2 style="margin-top:8px">Literature review &amp; synthesis</h2>
   </div>
-  <p>The highest-leverage research skill in the plan &mdash; and the one with the sharpest integrity risk. The core discipline: <strong>discovery happens in grounded tools that search real papers; Claude and NotebookLM synthesize only what you have actually retrieved; Zotero is the gatekeeper for every citation.</strong></p>
+  <p>This is the highest-leverage research skill in the plan, and the one with the sharpest integrity risk. The core discipline: discovery happens in grounded tools that search real papers; Claude and NotebookLM synthesize only what you have actually retrieved; and Zotero is the gatekeeper for every citation.</p>
 
   <h4>Objectives</h4>
-  <p>Run an end-to-end literature workflow &mdash; discover, map, synthesize, and manage references &mdash; producing a synthesis with no fabricated or misattributed citations, every claim traceable to a real paper you have read.</p>
+  <p>Run an end-to-end literature workflow (discover, map, synthesize, and manage references) that produces a synthesis with no fabricated or misattributed citations, every claim traceable to a real paper you have read.</p>
 
-  <h4>Learn the tools (each &lt;1 hr; use verified tutorials in Section 7)</h4>
+  <h4>Learn the tools (each under an hour; use the verified tutorials in Section 7)</h4>
   <table class="tight">
     <tr><th>Tool</th><th>Role in the workflow</th><th>Cost</th></tr>
-    <tr><td><strong><a href="https://www.zotero.org">Zotero</a></strong></td><td>Reference manager &amp; citation gatekeeper &mdash; only real, retrieved papers live here</td><td><span class="pill free">Free</span></td></tr>
-    <tr><td><strong><a href="https://www.semanticscholar.org">Semantic Scholar</a></strong></td><td>Free search backbone + TLDRs + alerts</td><td><span class="pill free">Free</span></td></tr>
+    <tr><td><strong><a href="https://www.zotero.org">Zotero</a></strong></td><td>Reference manager and citation gatekeeper; only real, retrieved papers live here</td><td><span class="pill free">Free</span></td></tr>
+    <tr><td><strong><a href="https://www.semanticscholar.org">Semantic Scholar</a></strong></td><td>Free search backbone, TLDRs, and alerts</td><td><span class="pill free">Free</span></td></tr>
     <tr><td><strong><a href="https://www.researchrabbit.ai">ResearchRabbit</a></strong></td><td>Visual citation-network mapping of a subfield; syncs to Zotero</td><td><span class="pill free">Free</span></td></tr>
     <tr><td><strong><a href="https://elicit.com">Elicit</a></strong></td><td>Structured evidence tables from real papers (methods, n, outcomes)</td><td><span class="pill opt">Free / $12</span></td></tr>
     <tr><td><strong><a href="https://consensus.app">Consensus</a></strong></td><td>Fast citation-backed check on yes/no empirical claims</td><td><span class="pill opt">Free / ~$10</span></td></tr>
-    <tr><td><strong><a href="https://scite.ai">Scite</a></strong></td><td>Did a finding hold up? Supporting vs contrasting citations</td><td><span class="pill opt">Library / $12</span></td></tr>
+    <tr><td><strong><a href="https://scite.ai">Scite</a></strong></td><td>Did a finding hold up? Supporting versus contrasting citations</td><td><span class="pill opt">Library / $12</span></td></tr>
     <tr><td><strong><a href="https://notebooklm.google">NotebookLM</a></strong></td><td>Grounded close-reading of papers you upload; cites every claim; audio overviews</td><td><span class="pill free">Free</span></td></tr>
     <tr><td><strong><a href="https://www.anthropic.com/news/claude-for-life-sciences">Claude (PubMed connector)</a></strong></td><td>Synthesis, drafting, and reasoning across retrieved papers</td><td>In Pro</td></tr>
   </table>
 
   <h4>Do</h4>
   <ul>
-    <li>Pick a <strong>real question</strong> from your project (e.g., &ldquo;what&rsquo;s known about [receptor/pathway] in [cell type] during [process]&rdquo;).</li>
+    <li>Pick a real question from your project (for example, &ldquo;what&rsquo;s known about [receptor/pathway] in [cell type] during [process]&rdquo;).</li>
     <li><strong>Discover:</strong> map the subfield in <a href="https://www.researchrabbit.ai">ResearchRabbit</a>, pull an evidence table in <a href="https://elicit.com">Elicit</a>, sanity-check claims in <a href="https://consensus.app">Consensus</a>, and check whether key findings replicated in <a href="https://scite.ai">Scite</a>. Import everything real into <strong><a href="https://www.zotero.org">Zotero</a></strong>.</li>
-    <li><strong>Synthesize:</strong> load the retrieved PDFs into <strong><a href="https://notebooklm.google">NotebookLM</a></strong> and a <strong>Claude Project</strong>; ask each to summarize themes, agreements, and open questions &mdash; every claim cited to a source you have.</li>
-    <li><strong>Verify:</strong> for every citation, confirm it exists and says what&rsquo;s claimed (quote-search in the PDF / Google Scholar; check DOIs via Crossref; screen older references against <strong><a href="https://retractionwatch.com">Retraction Watch</a></strong>).</li>
+    <li><strong>Synthesize:</strong> load the retrieved PDFs into <strong><a href="https://notebooklm.google">NotebookLM</a></strong> and a <strong>Claude Project</strong>, then ask each to summarize themes, agreements, and open questions, with every claim cited to a source you have.</li>
+    <li><strong>Verify:</strong> for every citation, confirm it exists and says what&rsquo;s claimed (quote-search in the PDF or Google Scholar; check DOIs via Crossref; screen older references against <strong><a href="https://retractionwatch.com">Retraction Watch</a></strong>).</li>
   </ul>
 
   <div class="box warn">
     <div class="box-t">The non-negotiable rule</div>
-    <p style="margin:0">Never ask Claude (or any chatbot) to &ldquo;give me references for X&rdquo; from memory &mdash; it will produce real-looking citations that don&rsquo;t exist. Fabricated-reference rates in the literature have risen sharply. Ask it to reason only over papers you supply. Zotero is the single source of truth for your bibliography.</p>
+    <p style="margin:0">Never ask Claude (or any chatbot) to &ldquo;give me references for X&rdquo; from memory. It will produce real-looking citations that don&rsquo;t exist, and fabricated-reference rates in the literature have risen sharply. Ask it to reason only over papers you supply, and let Zotero be the single source of truth for your bibliography.</p>
   </div>
 
-  <div class="mile"><div class="mh">&#10022; Milestone 3 &mdash; Verified mini-synthesis</div>A <strong>2&ndash;3 page synthesis</strong> on a real question, ~10&ndash;15 papers, with a Zotero library and a short <strong>verification log</strong> proving every citation was checked &mdash; <strong>zero fabricated or misattributed references</strong>. This is the plan&rsquo;s integrity keystone. Self-score D4, D9. <em>Local-expert tell:</em> you can teach the &ldquo;discover-then-synthesize, never-invent&rdquo; workflow to a labmate.</div>
+  <div class="mile"><div class="mh">&#10022; Milestone 3: Verified mini-synthesis</div>A <strong>2-3 page synthesis</strong> on a real question, drawing on about 10-15 papers, with a Zotero library and a short <strong>verification log</strong> proving every citation was checked, and zero fabricated or misattributed references. This is the plan&rsquo;s integrity keystone. Self-score D4 and D9. Local-expert tell: you can teach the &ldquo;discover, then synthesize, never invent&rdquo; workflow to a labmate.</div>
 </div>
